@@ -1,0 +1,41 @@
+------------------------------------------------------------
+User: heather  Tue Nov  8 09:28:16 PST 2005
+AcdUtil
+
+Log Message:
+Initial import of new AcdUtil
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v0
+		
+I AcdUtil/rh9_gcc32
+N AcdUtil/.cvsignore
+I AcdUtil/rh9_gcc32opt
+N AcdUtil/cmt/requirements
+I AcdUtil/cmt/Makefile
+I AcdUtil/cmt/cleanup.csh
+I AcdUtil/cmt/setup.csh
+I AcdUtil/cmt/setup.sh
+N AcdUtil/cmt/.cvsignore
+I AcdUtil/cmt/cleanup.sh
+I AcdUtil/cmt/rh9_gcc32.make
+N AcdUtil/doc/release.notes
+N AcdUtil/src/mainpage.h
+N AcdUtil/src/AcdGeometrySvc.cxx
+N AcdUtil/src/AcdGeometrySvc.h
+N AcdUtil/src/RayDoca.cxx
+N AcdUtil/src/AcdDetectorList.cxx
+N AcdUtil/src/Dll/AcdUtil_load.cxx
+N AcdUtil/src/Dll/AcdUtil_dll.cxx
+N AcdUtil/src/test/jobOptions.txt
+N AcdUtil/src/test/TestAcdUtil.cxx
+N AcdUtil/src/test/jobOptions.txtSAVE
+N AcdUtil/AcdUtil/IAcdGeometrySvc.h
+N AcdUtil/AcdUtil/RayDoca.h
+N AcdUtil/AcdUtil/AcdDetectorList.h
+
+No conflicts created by this import
+
+    *
