@@ -1,7 +1,7 @@
 #define TestAcdUtil_CXX
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdUtil.cxx,v 1.4 2002/09/27 19:40:06 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.1.1.1 2005/11/08 17:28:16 heather Exp $
 // Description:
 // Test for AcdUtil class. 
 
@@ -26,7 +26,7 @@
  *
  * Exercise all of AcdUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdDigi/src/test/util/TestAcdUtil.cxx,v 1.4 2002/09/27 19:40:06 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.1.1.1 2005/11/08 17:28:16 heather Exp $
  */
 
 class TestAcdUtil : public Algorithm {
@@ -68,6 +68,8 @@ StatusCode TestAcdUtil::initialize() {
         log << MSG::ERROR << "  Unable to find ACD Geometry service" << endreq;
         return sc;
     }
+
+    m_acdGeoSvc->findCornerGaps();
 
     return sc;
 }
