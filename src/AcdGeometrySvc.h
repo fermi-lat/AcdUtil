@@ -11,7 +11,7 @@
  * 
  * @author Heather Kelly 
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/TkrUtil/src/AcdGeometrySvc.h,v 1.25 2005/08/17 00:41:30 lsrea Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.1.1.1 2005/11/08 17:28:16 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -21,6 +21,10 @@
 #include "GlastSvc/GlastDetSvc/IGlastDetSvc.h"
 #include "idents/VolumeIdentifier.h"
 #include "idents/AcdId.h"
+
+#include "geometry/Ray.h"
+#include "geometry/Point.h"
+#include "geometry/Vector.h"
 
 #include "AcdUtil/AcdDetectorList.h"
 
@@ -65,6 +69,9 @@ public:
                                     std::vector<double> &dims, 
                                     HepPoint3D &xT) const;
 
+    StatusCode findCornerGaps();
+    const Ray getCornerGapRay(unsigned int index) const;
+
 private:
 
     void clear();
@@ -74,6 +81,9 @@ private:
 
     int m_numTiles, m_numRibbons;
     int m_numXtowers, m_numYtowers;
+
+    Point m_cornerGapStartPoint[4], m_cornerGapEndPoint[4];
+    Vector m_cornerGapVec[4];
 
     AcdUtil::AcdDetectorList m_detectorCol;
 };
