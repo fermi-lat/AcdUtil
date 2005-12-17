@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Dec 16 16:29:16 PST 2005
+AcdUtil/src
+
+Added Files:
+	AcdRibbonDim.cxx AcdTileDim.cxx 
+Log Message:
+Acd AcdTileDim and AcdRibbonDim holders for passing and Acd geometry information
+    *
+------------------------------------------------------------
 User: echarles  Fri Dec 16 16:29:15 PST 2005
 AcdUtil/AcdUtil
 
