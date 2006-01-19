@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Jan 19 09:39:33 PST 2006
+AcdUtil/src
+
+Modified Files:
+	AcdGeometrySvc.cxx 
+Log Message:
+update warnings to include volids
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r2p1, operation: add
 Package: AcdUtil
