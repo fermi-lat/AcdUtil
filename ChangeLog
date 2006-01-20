@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Jan 19 17:52:40 PST 2006
+AcdUtil/src
+
+Modified Files:
+	AcdRibbonDim.cxx 
+Log Message:
+handle new ribbon orientation
+    *
+------------------------------------------------------------
 User: heather  Thu Jan 19 17:52:26 PST 2006
 AcdUtil/cmt
 
