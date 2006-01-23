@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Jan 23 12:34:00 PST 2006
+AcdUtil/src
+
+Modified Files:
+	AcdRibbonDim.cxx 
+Log Message:
+prepare to tag new patch for ribbon orientation change
+    *
+------------------------------------------------------------
+User: heather  Mon Jan 23 12:34:00 PST 2006
 AcdUtil/src/test
 
 Modified Files:
