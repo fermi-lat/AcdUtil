@@ -72,7 +72,7 @@ StatusCode AcdGeometrySvc::finalize()
 }
 
 
-StatusCode  AcdGeometrySvc::queryInterface (const IID& riid, void **ppvIF)
+StatusCode  AcdGeometrySvc::queryInterface (const InterfaceID& riid, void **ppvIF)
 {
     if (IID_IAcdGeometrySvc == riid) {
         *ppvIF = dynamic_cast<IAcdGeometrySvc*> (this);
@@ -85,7 +85,7 @@ StatusCode  AcdGeometrySvc::queryInterface (const IID& riid, void **ppvIF)
 
 // access the type of this service
 
-const IID&  AcdGeometrySvc::type () const {
+const InterfaceID&  AcdGeometrySvc::type () const {
     return IID_IAcdGeometrySvc;
 }
 
