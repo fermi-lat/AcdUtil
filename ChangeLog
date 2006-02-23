@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Feb 22 21:46:29 PST 2006
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+about to tag, adjusting to Navid's lib strategy
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r1cl1, operation: add
 Package: AcdUtil
