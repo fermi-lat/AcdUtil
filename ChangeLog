@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Mon Mar  6 17:31:46 PST 2006
+AcdUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+switch to proper pattern; tag
+    *
+------------------------------------------------------------
+User: burnett  Mon Mar  6 17:31:46 PST 2006
 AcdUtil/cmt
 
 Modified Files:
