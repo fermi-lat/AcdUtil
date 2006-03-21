@@ -1,7 +1,7 @@
 /** @file IAcdGeometrySvc.h
  @brief Abstract interface to TkrGeometrySvc (q.v.)
 
-  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdGeometrySvc.h,v 1.1.1.1 2005/11/08 17:28:16 heather Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdGeometrySvc.h,v 1.2.2.1 2006/01/31 19:44:16 usher Exp $
 */
 
 #ifndef __IACDGEOMETRYSVC_H
@@ -11,6 +11,11 @@
 
 
 #include "CLHEP/Geometry/Point3D.h"
+
+// TU: Hacks for CLHEP 1.9.2.2 and beyond
+#ifndef HepPoint3D
+typedef HepGeom::Point3D<double> HepPoint3D;
+#endif
 
 #include "idents/AcdId.h"
 #include "idents/VolumeIdentifier.h"

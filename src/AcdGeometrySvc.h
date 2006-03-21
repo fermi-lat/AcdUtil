@@ -11,7 +11,7 @@
  * 
  * @author Heather Kelly 
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.1.1.1 2005/11/08 17:28:16 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.2.2.1 2006/02/13 22:18:55 usher Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -39,13 +39,13 @@ public:
     StatusCode initialize();
     StatusCode finalize();
     
-    StatusCode queryInterface(const IID& riid, void** ppvUnknown);
+    StatusCode queryInterface(const InterfaceID& riid, void** ppvUnknown);
 
     static const InterfaceID& interfaceID() {
         return IAcdGeometrySvc::interfaceID(); 
     }
     /// return the service type
-    const IID& type() const;
+    const InterfaceID& type() const;
 
     StatusCode getConstants();
     StatusCode getDetectorListFromGeometry();
