@@ -1,4 +1,34 @@
 ------------------------------------------------------------
+TAG
+Tag name: v0r3p1, operation: add
+Package: AcdUtil
+User: cohen  Tue Mar 28 13:51:37 2006
+Files:
+  AcdUtil/.cvsignore  1.1.1.1
+  AcdUtil/ChangeLog  1.65
+  AcdUtil/AcdUtil/IAcdGeometrySvc.h  1.3
+  AcdUtil/AcdUtil/AcdTileDim.h  1.1
+  AcdUtil/AcdUtil/RayDoca.h  1.1.1.1
+  AcdUtil/AcdUtil/AcdDetectorList.h  1.1.1.1
+  AcdUtil/AcdUtil/AcdRibbonDim.h  1.2
+  AcdUtil/cmt/.cvsignore  1.1.1.1
+  AcdUtil/cmt/requirements  1.15
+  AcdUtil/doc/release.notes  1.15
+  AcdUtil/src/RayDoca.cxx  1.1.1.1
+  AcdUtil/src/mainpage.h  1.1.1.1
+  AcdUtil/src/AcdRibbonDim.cxx  1.3
+  AcdUtil/src/AcdGeometrySvc.cxx  1.5
+  AcdUtil/src/AcdDetectorList.cxx  1.1.1.1
+  AcdUtil/src/AcdTileDim.cxx  1.1
+  AcdUtil/src/AcdGeometrySvc.h  1.3
+  AcdUtil/src/Dll/AcdUtil_load.cxx  1.1.1.1
+  AcdUtil/src/Dll/AcdUtil_dll.cxx  1.1.1.1
+  AcdUtil/src/test/jobOptions.txtSAVE  1.1.1.1
+  AcdUtil/src/test/jobOptions.txt  1.3
+  AcdUtil/src/test/TestAcdUtil.cxx  1.3
+
+    *
+------------------------------------------------------------
 User: cohen  Tue Mar 28 13:22:04 PST 2006
 AcdUtil/src/test
 
