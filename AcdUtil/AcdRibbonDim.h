@@ -7,8 +7,10 @@
 #include "CLHEP/Geometry/Point3D.h"
 #include "idents/AcdId.h"
 #include "idents/VolumeIdentifier.h"
+#include "CLHEP/Geometry/Transform3D.h"
 
-class IGlastDetSvc;
+#include "GlastSvc/GlastDetSvc/IGlastDetSvc.h"
+
 class HepPoint3D;
 
 /**
@@ -20,7 +22,7 @@ class HepPoint3D;
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdRibbonDim.h,v 1.2 2005/11/09 01:11:09 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdRibbonDim.h,v 1.1 2005/12/17 00:29:15 echarles Exp $
 */
 
 class AcdRibbonDim {
@@ -28,8 +30,9 @@ class AcdRibbonDim {
 public:
     
   /// This function gets information about the ribbons from the detector service
-  static StatusCode getDetectorDimensions( const idents::VolumeIdentifier& volId, IGlastDetSvc &detSvc,
-					   std::vector<double>& dim, HepPoint3D& center);
+  StatusCode getDetectorDimensions( int isegment, 
+				    const idents::VolumeIdentifier& volId, IGlastDetSvc &detSvc,
+				    std::vector<double>& dim, HepPoint3D& center);
   
 public:
     
@@ -38,6 +41,13 @@ public:
   
   /// trivial destructor  
   ~AcdRibbonDim() {;}
+
+  /// update (ie, when we get a new event)
+  StatusCode update(IGlastDetSvc &detSvc) {
+    m_detSvc = detSvc;
+    m_sc = getVals();
+    return m_sc;
+  }
 
   /// direct access functions
   inline IGlastDetSvc& detSvc() const { return m_detSvc; }
@@ -48,6 +58,8 @@ public:
   inline const HepPoint3D* ribbonEnd() const { return m_end; }
   inline const double* halfWidth() const { return m_halfWidth; }
   inline StatusCode statusCode() const { return m_sc; }
+
+  void toLocal(const HepPoint3D& global, int segment, HepPoint3D& local);
 
 protected:
 
@@ -76,6 +88,9 @@ private:
   
   /// the end points of the segments (in global coordinates)
   HepPoint3D                m_end[3];
+
+  /// the transformations to local coords
+  HepTransform3D            m_transform[3];
 
   /// size of the ribbons
   double                    m_halfWidth[3];

@@ -7,8 +7,8 @@
 #include "CLHEP/Geometry/Point3D.h"
 #include "idents/AcdId.h"
 #include "idents/VolumeIdentifier.h"
-
-class IGlastDetSvc;
+#include "GlastSvc/GlastDetSvc/IGlastDetSvc.h"
+#include "CLHEP/Geometry/Transform3D.h"
 
 /**
 *  @class AcdTileDim
@@ -19,7 +19,7 @@ class IGlastDetSvc;
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTileDim.h,v 1.2 2005/11/09 01:11:09 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdTileDim.h,v 1.1 2005/12/17 00:29:15 echarles Exp $
 */
 
 class AcdTileDim {
@@ -36,7 +36,14 @@ public:
   
   /// trivial destructor
   ~AcdTileDim() {;}
-  
+
+  /// update (ie, when we get a new event)
+  StatusCode update(IGlastDetSvc &detSvc) {
+    m_detSvc = detSvc;
+    m_sc = getVals();
+    return m_sc;
+  }
+
   /// direct access functions
   inline IGlastDetSvc& detSvc() const { return m_detSvc; }
   inline const idents::AcdId& acdId() const { return m_acdId; }
@@ -45,6 +52,8 @@ public:
   inline const HepPoint3D& tileCenter() const { return m_tileCenter; }
   inline const HepPoint3D* corner() const { return m_corners; }
   inline StatusCode statusCode() const { return m_sc; }
+
+  void toLocal(const HepPoint3D& global, HepPoint3D& local);
 
 protected:
   
@@ -73,6 +82,10 @@ private:
 
   /// the four corners of the tile (in global coordinates)
   HepPoint3D                m_corners[4];  
+
+  /// the transformations to local coords
+  HepTransform3D            m_transform;
+
 
 };
    

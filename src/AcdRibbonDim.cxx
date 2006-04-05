@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdRibbonDim.cxx,v 1.2 2006/01/20 01:52:40 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdRibbonDim.cxx,v 1.1 2005/12/17 00:29:16 echarles Exp $
 //
 //  Implementation file of AcdRibbonDim 
 //  
@@ -11,7 +11,6 @@
 
 #include "AcdUtil/AcdRibbonDim.h"
 
-#include "GlastSvc/GlastDetSvc/IGlastDetSvc.h"
 #include "CLHEP/Geometry/Transform3D.h"
 
 /// Constructor: takes the ribbon id, the volume id, and the detector service
@@ -19,10 +18,8 @@ AcdRibbonDim::AcdRibbonDim(const idents::AcdId& acdId, const idents::VolumeIdent
 			   IGlastDetSvc &detSvc) 
   :m_acdId(acdId),
    m_volId(volId),
-   m_detSvc(detSvc) 
-{
-    m_sc = getVals();
-
+   m_detSvc(detSvc) {
+  m_sc = getVals();
 }  
 
 /// this function access the detector service to get the geometry information
@@ -37,17 +34,19 @@ StatusCode AcdRibbonDim::getVals() {
   int sideFace[2];
   // check orientation to determine which segment number to retrieve for top
   if (m_acdId.ribbonOrientation() == ribbonX) {
-    topSegment = 1;
+    topSegment = 2;
     // ribbons that are along x-axis on the top go down faces 1,3
     sideFace[0] = 1; sideFace[1] = 3;
   } else {
-    topSegment = 2;
+    topSegment = 1;
     // ribbons that are along the y-axis on the top go down faces 2,4
     sideFace[0] = 2; sideFace[1] = 4;
   }
   
   for (int isegment = 0; isegment < 3; isegment++) {
     idents::VolumeIdentifier& segmentVolId = m_segId[isegment];
+    segmentVolId = idents::VolumeIdentifier();
+
     segmentVolId.append(m_volId[0]);
     short face;
     if (isegment == 1) {
@@ -73,7 +72,7 @@ StatusCode AcdRibbonDim::getVals() {
     
     // in this case, we need to extract the dimensions from 3 other top segments
     // to extend an imaginary ribbon across the whole top of the instrument
-    if (m_acdId.ribbonOrientation() == ribbonY && isegment == 1) {
+    if (m_acdId.ribbonOrientation() == ribbonX && isegment == 1) {
       int iseg;
       for(iseg = 1; iseg <= 3; iseg++) {
 	idents::VolumeIdentifier volId1;
@@ -87,7 +86,7 @@ StatusCode AcdRibbonDim::getVals() {
 	}
 	
 	std::vector<double> dim1;
-	sc = getDetectorDimensions(volId1, m_detSvc, dim1, center);
+	sc = getDetectorDimensions(isegment, volId1, m_detSvc, dim1, center);
 	
 	if (sc.isFailure()) {
 	  std::cout << "Failed to get dimensions for " << volId1.name() << std::endl;
@@ -96,40 +95,38 @@ StatusCode AcdRibbonDim::getVals() {
 	  return sc;
 	}
 	// pick up the beginning from the first segment
-	if (iseg == 1) y1 = center.y() - dim1[1]/2.;
+	if (iseg == 1) x1 = center.x() - dim1[0]/2.;
 	if (iseg == topSegment){
 	  // pick up the other 2 dimensions from a ribbon in the middle
-	  x1 = center.x(); 
+	  y1 = center.y(); 
 	  z1 = center.z();
-	  x2 = center.x();
+	  y2 = center.y();
 	  z2 = center.z();
-	  ribbonHalfWidth = dim1[0]/2.;
+	  ribbonHalfWidth = dim1[1]/2.;
 	} else if (iseg == 3) {
 	  // Pick up the ending point from the last segment
-	  y2 = center.y() + dim1[1]/2.;
+	  x2 = center.x() + dim1[0]/2.;
 	}
       }
-
-    } else if (m_acdId.ribbonOrientation() == ribbonX && isegment == 1) {
+    } else if (m_acdId.ribbonOrientation() == ribbonY && isegment == 1) {
       std::vector<double> dim;
-      sc = getDetectorDimensions(segmentVolId, m_detSvc, dim, center);
+      sc = getDetectorDimensions(isegment, segmentVolId, m_detSvc, dim, center);
       if (sc.isFailure()) {
 	std::cout << "Failed to get dimensions for " <<  segmentVolId.name() << std::endl;
 	// catch errors
 	sc = StatusCode::SUCCESS;
 	continue;
       }
-      x1 = center.x() - dim[0]/2.;
-      y1 = center.y();
+      x1 = center.x();
+      y1 = center.y() - dim[1]/2.;
       z1 = center.z();
-      x2 = center.x() + dim[0]/2.;
-      y2 = center.y();
+      x2 = center.x();
+      y2 = center.y() + dim[1]/2.;
       z2 = center.z();
-      ribbonHalfWidth = dim[1]/2.;
-
+      ribbonHalfWidth = dim[0]/2.;
     } else { // side ribbons - which are in one segment
       std::vector<double> dim;
-      sc = getDetectorDimensions(segmentVolId, m_detSvc, dim, center);
+      sc = getDetectorDimensions(isegment, segmentVolId, m_detSvc, dim, center);
       if (sc.isFailure()) {
 	std::cout << "Failed to get dimensions for " <<  segmentVolId.name() << std::endl;
 	// catch errors
@@ -155,14 +152,14 @@ StatusCode AcdRibbonDim::getVals() {
     m_start[isegment] = HepPoint3D(x1, y1, z1);
     m_end[isegment] = HepPoint3D(x2, y2, z2);    
     m_halfWidth[isegment] = ribbonHalfWidth;
-
   }
   
   return sc;
 }
 
 
-StatusCode AcdRibbonDim::getDetectorDimensions( const idents::VolumeIdentifier& volId, IGlastDetSvc &detSvc,
+StatusCode AcdRibbonDim::getDetectorDimensions( int isegment, 
+						const idents::VolumeIdentifier& volId, IGlastDetSvc &detSvc,
 						std::vector<double>& dim, HepPoint3D& center) {
 
   std::string str;
@@ -173,14 +170,18 @@ StatusCode AcdRibbonDim::getDetectorDimensions( const idents::VolumeIdentifier& 
     return sc;
   } 
 
-  HepTransform3D transform;
-  sc = detSvc.getTransform3DByID(volId, &transform);
+  sc = detSvc.getTransform3DByID(volId, &(m_transform[isegment]));
   if (sc.isFailure() ) {
     //log << MSG::WARNING << "Failed to get trasnformation" << endreq;
     return sc;
   } 
 
   HepPoint3D theCenter(0., 0., 0.);
-  center = transform * theCenter;
+  center = m_transform[isegment] * theCenter;
   return sc;
+}
+
+
+void AcdRibbonDim::toLocal(const HepPoint3D& global, int isegment, HepPoint3D& local) {
+  local = m_transform[isegment] * global;
 }
