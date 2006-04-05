@@ -3,6 +3,7 @@
  Coordinator:H.Kelly
  @verbatim
 
+ v0r3     04-Apr-2006 EAC Cache transform to local coords in AcdTileDim and AcdRibbonDim
  v0r2p10  06-mar-2006 THB use the proper pattern
  v0r2p9   23-Feb-2006 THB make use of static lib constistent with Navid's lib folder
  v0r2p7   07-Feb-2006 THB restore name, make it a static lib.
@@ -13,7 +14,7 @@
  v0r2p2   19-Jan-2006 HMK Update warnings to include volids
  v0r2p1   13-Jan-2006 HMK Update req file to create two shared libraries
           One Gaudi component library and one non-component library
- v0r2     12-Jan-2006 EC  Add AcdTileDim and AcdRibbonDim
+ v0r2     12-Jan-2006 EAC Add AcdTileDim and AcdRibbonDim
  v0r1p1   08-Nov-2005 HMK Small patches to AcdGeometrySvc
  v0r1     08-Nov-2005 HMK Add methods for corner gap rays
  v0       08-Nov-2005 HMK initial import 
