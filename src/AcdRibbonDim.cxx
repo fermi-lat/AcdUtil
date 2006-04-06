@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdRibbonDim.cxx,v 1.3.2.1 2006/04/05 02:18:43 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdRibbonDim.cxx,v 1.3.2.2 2006/04/06 21:38:07 heather Exp $
 //
 //  Implementation file of AcdRibbonDim 
 //  
@@ -89,9 +89,9 @@ StatusCode AcdRibbonDim::getVals() {
 	sc = getDetectorDimensions(isegment, volId1, m_detSvc, dim1, center);
 	
 	if (sc.isFailure()) {
-	  std::cout << "Failed to get dimensions for " << volId1.name() << std::endl;
+	  std::cout << "Failed to get dimensions for " << volId1.name() << " toppart segment " << iseg <<  std::endl;
 	   // catch errors
-	  sc = StatusCode::SUCCESS;
+	  sc = StatusCode::FAILURE;
 	  return sc;
 	}
 	// pick up the beginning from the first segment
@@ -112,9 +112,9 @@ StatusCode AcdRibbonDim::getVals() {
       std::vector<double> dim;
       sc = getDetectorDimensions(isegment, segmentVolId, m_detSvc, dim, center);
       if (sc.isFailure()) {
-	std::cout << "Failed to get dimensions for " <<  segmentVolId.name() << std::endl;
+	std::cout << "Failed to get dimensions for " <<  segmentVolId.name() << " top segment " << isegment << std::endl;
 	// catch errors
-	sc = StatusCode::SUCCESS;
+	sc = StatusCode::FAILURE;
 	continue;
       }
       x1 = center.x() - dim[0]/2.;
@@ -128,9 +128,9 @@ StatusCode AcdRibbonDim::getVals() {
       std::vector<double> dim;
       sc = getDetectorDimensions(isegment, segmentVolId, m_detSvc, dim, center);
       if (sc.isFailure()) {
-	std::cout << "Failed to get dimensions for " <<  segmentVolId.name() << std::endl;
+	std::cout << "Failed to get dimensions for " <<  segmentVolId.name() << " side segment " << isegment << std::endl;
 	// catch errors
-	sc = StatusCode::SUCCESS;
+	sc = StatusCode::FAILURE;
 	continue;
       }       
       x1 = center.x();
