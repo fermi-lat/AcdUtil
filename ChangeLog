@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Thu Apr  6 15:43:20 PDT 2006
+AcdUtil/src
+
+Modified Files:
+      Tag: EM-v6r070329p0
+	AcdRibbonDim.cxx 
+Log Message:
+allow failures to get ribbon segments to cause job to abort
+    *
+------------------------------------------------------------
 User: heather  Thu Apr  6 14:38:08 PDT 2006
 AcdUtil/src
 
