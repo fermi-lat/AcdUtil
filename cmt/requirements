@@ -1,7 +1,7 @@
 package AcdUtil
-version v0r2p10
+version v0r2p10em0
 author Heather Kelly <heather@milkyway.gsfc.nasa.gov>
-# $Id: requirements,v 1.13 2006/02/23 19:03:10 burnett Exp $
+# $Id: requirements,v 1.14 2006/03/07 01:31:46 burnett Exp $
 
 use GlastSvc v*
 use Event v*
