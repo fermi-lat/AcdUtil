@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: echarles  Wed Apr 12 11:15:55 PDT 2006
+AcdUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+ Added AcdCalibSvc
+               So far this handles pedestals and gains (aka mip peaks)
+               Adds a dependency of CalibData
+
+
+    *
+------------------------------------------------------------
 User: echarles  Wed Apr 12 11:15:49 PDT 2006
 AcdUtil/cmt
 
