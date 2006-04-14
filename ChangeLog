@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu Apr 13 17:41:04 PDT 2006
+AcdUtil/src
+
+Modified Files:
+	AcdRibbonDim.cxx AcdTileDim.cxx 
+Log Message:
+Pull in updates from branch EM-v6r070329p0, tag v0r2p10em0
+    *
+------------------------------------------------------------
 User: echarles  Thu Apr 13 17:41:03 PDT 2006
 AcdUtil/doc
 
