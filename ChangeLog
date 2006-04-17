@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Apr 17 12:05:54 PDT 2006
+AcdUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+ Work some obscure magic so that windows understands what to do
+    *
+------------------------------------------------------------
 User: echarles  Mon Apr 17 12:05:52 PDT 2006
 AcdUtil/cmt
 
