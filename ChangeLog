@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: echarles  Mon Apr 17 12:05:52 PDT 2006
-AcdUtil/cmt
-
-Modified Files:
-	requirements 
-Log Message:
- Work some obscure magic so that windows understands what to do
-    *
-------------------------------------------------------------
 TAG
 Tag name: v1r1, operation: add
 Package: AcdUtil
