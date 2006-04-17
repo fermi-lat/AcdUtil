@@ -1,4 +1,41 @@
 ------------------------------------------------------------
+TAG
+Tag name: v1r1p1, operation: add
+Package: AcdUtil
+User: echarles  Mon Apr 17 12:06:40 2006
+Files:
+  AcdUtil/.cvsignore  1.1.1.1
+  AcdUtil/ChangeLog  1.84
+  AcdUtil/AcdUtil/IAcdGeometrySvc.h  1.3
+  AcdUtil/AcdUtil/AcdTileDim.h  1.2
+  AcdUtil/AcdUtil/RayDoca.h  1.1.1.1
+  AcdUtil/AcdUtil/AcdDetectorList.h  1.1.1.1
+  AcdUtil/AcdUtil/IAcdCalibSvc.h  1.1
+  AcdUtil/AcdUtil/AcdRibbonDim.h  1.3
+  AcdUtil/cmt/.cvsignore  1.1.1.1
+  AcdUtil/cmt/requirements  1.18
+  AcdUtil/doc/release.notes  1.18
+  AcdUtil/src/RayDoca.cxx  1.1.1.1
+  AcdUtil/src/AcdCalibSvc.cxx  1.1
+  AcdUtil/src/AcdDetectorList.cxx  1.1.1.1
+  AcdUtil/src/AcdTileDim.cxx  1.2
+  AcdUtil/src/AcdPedCalibMgr.h  1.1
+  AcdUtil/src/AcdGeometrySvc.h  1.3
+  AcdUtil/src/mainpage.h  1.1.1.1
+  AcdUtil/src/AcdCalibMgr.cxx  1.1
+  AcdUtil/src/AcdRibbonDim.cxx  1.4
+  AcdUtil/src/AcdGeometrySvc.cxx  1.5
+  AcdUtil/src/AcdCalibMgr.h  1.1
+  AcdUtil/src/AcdCalibSvc.h  1.1
+  AcdUtil/src/AcdGainCalibMgr.h  1.1
+  AcdUtil/src/Dll/AcdUtil_load.cxx  1.2
+  AcdUtil/src/Dll/AcdUtil_dll.cxx  1.2
+  AcdUtil/src/test/jobOptions.txtSAVE  1.1.1.1
+  AcdUtil/src/test/jobOptions.txt  1.3
+  AcdUtil/src/test/TestAcdUtil.cxx  1.3
+
+    *
+------------------------------------------------------------
 User: echarles  Mon Apr 17 12:05:56 PDT 2006
 AcdUtil/src/Dll
 
