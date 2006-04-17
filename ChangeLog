@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Apr 17 12:05:56 PDT 2006
+AcdUtil/src/Dll
+
+Modified Files:
+	AcdUtil_dll.cxx AcdUtil_load.cxx 
+Log Message:
+ Work some obscure magic so that windows understands what to do
+    *
+------------------------------------------------------------
 User: echarles  Mon Apr 17 12:05:54 PDT 2006
 AcdUtil/doc
 
