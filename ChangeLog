@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: echarles  Tue Apr 18 13:57:42 PDT 2006
+AcdUtil/src
+
+Modified Files:
+	AcdCalibMgr.cxx AcdCalibMgr.h AcdGainCalibMgr.h 
+	AcdPedCalibMgr.h 
+Log Message:
+'ideal' now uses built-in code instead of file in calibDB
+    *
+------------------------------------------------------------
+User: echarles  Tue Apr 18 13:57:42 PDT 2006
 AcdUtil/doc
 
 Modified Files:
