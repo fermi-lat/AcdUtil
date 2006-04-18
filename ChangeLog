@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Apr 17 18:40:11 PDT 2006
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added apply_pattern use_CalibData_symbols for windows
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r1p1, operation: add
 Package: AcdUtil
