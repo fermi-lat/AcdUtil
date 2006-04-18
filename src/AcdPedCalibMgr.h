@@ -1,6 +1,6 @@
 #ifndef PedMgr_H
 #define PedMgr_H
-// $Header: /nfs/slac/g/glast/ground/cvs/CalXtalResponse/src/CalCalib/PedMgr.h,v 1.7 2006/01/09 21:08:21 fewtrell Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdPedCalibMgr.h,v 1.1 2006/04/12 18:16:04 echarles Exp $
 // LOCAL
 #include "AcdCalibMgr.h"
 
@@ -29,7 +29,13 @@ public:
   /// get pedestal vals for given channel
   StatusCode getPed(idents::AcdId id, unsigned pmt,
 		    CalibData::AcdPed*& pedestal) {
-    
+
+    static CalibData::AcdPed nullPed(0.,0.,0); // all pedestals are null
+    if ( m_ideal ) {
+      pedestal = &nullPed;
+      return StatusCode::SUCCESS;
+    }
+  
     // make sure we have valid calib data for this event.
     StatusCode sc;
     sc = updateCalib();

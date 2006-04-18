@@ -1,6 +1,6 @@
 #ifndef AcdCalibMgr_H
 #define AcdCalibMgr_H
-// $Header: $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdCalibMgr.h,v 1.1 2006/04/12 18:16:04 echarles Exp $
 
 // LOCAL
 
@@ -31,7 +31,8 @@ class AcdCalibMgr {
 public:
   AcdCalibMgr(const std::string &calibTypePath)
     :m_calibTypePath(calibTypePath),
-     owner(0),
+     m_ideal(false),
+     owner(0),     
      m_isValid(false),
      m_serNo(-1)
   {}
@@ -69,6 +70,9 @@ protected:
 
   /// TDS location for root of my calib_type and path
   CalibData::AcdCalibBase     *m_calibBase;
+
+  /// Should we use the "ideal" calibration instead of the database
+  bool                         m_ideal;
 
   /// ref to owner->CalCalibSvc object
   const AcdCalibSvc           *owner;
