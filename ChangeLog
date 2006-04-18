@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Apr 18 13:57:42 PDT 2006
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+'ideal' now uses built-in code instead of file in calibDB
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r1p2, operation: add
 Package: AcdUtil
