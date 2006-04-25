@@ -5,8 +5,6 @@
 
 #include "src/AcdGeometrySvc.h"
 
-#include "CLHEP/Geometry/Transform3D.h"
-
 #include "idents/TowerId.h"
 
 #include <iostream>
@@ -72,7 +70,7 @@ StatusCode AcdGeometrySvc::finalize()
 }
 
 
-StatusCode  AcdGeometrySvc::queryInterface (const InterfaceID& riid, void **ppvIF)
+StatusCode  AcdGeometrySvc::queryInterface (const IID& riid, void **ppvIF)
 {
     if (IID_IAcdGeometrySvc == riid) {
         *ppvIF = dynamic_cast<IAcdGeometrySvc*> (this);
@@ -85,7 +83,7 @@ StatusCode  AcdGeometrySvc::queryInterface (const InterfaceID& riid, void **ppvI
 
 // access the type of this service
 
-const InterfaceID&  AcdGeometrySvc::type () const {
+const IID&  AcdGeometrySvc::type () const {
     return IID_IAcdGeometrySvc;
 }
 
@@ -157,7 +155,7 @@ StatusCode AcdGeometrySvc::getDimensions(
             << volId.name() << endreq;
         return sc;
     }
-    HepGeom::Transform3D transform;
+    HepTransform3D transform;
     sc = m_glastDetSvc->getTransform3DByID(volId, &transform);
     if (sc.isFailure() ) {
         MsgStream   log( msgSvc(), name() );
