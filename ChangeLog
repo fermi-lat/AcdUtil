@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Apr 25 15:44:59 PDT 2006
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+No really, actually tag the stuff this time
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r1p3em3, operation: add
 Package: AcdUtil
