@@ -2,6 +2,21 @@
 TAG
 Tag name: v1r1p3em1, operation: add
 Package: AcdUtil
+User: echarles  Tue Apr 25 11:41:26 2006
+Files:
+  AcdUtil/AcdUtil/IAcdCalibSvc.h  1.1
+  AcdUtil/src/AcdCalibSvc.cxx  1.1
+  AcdUtil/src/AcdCalibMgr.cxx  1.2
+  AcdUtil/src/AcdGainCalibMgr.h  1.2
+  AcdUtil/src/AcdCalibSvc.h  1.1
+  AcdUtil/src/AcdCalibMgr.h  1.2
+  AcdUtil/src/AcdPedCalibMgr.h  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: v1r1p3em1, operation: add
+Package: AcdUtil
 User: echarles  Tue Apr 25 11:28:00 2006
 Files:
   AcdUtil/.cvsignore  1.1.1.1
