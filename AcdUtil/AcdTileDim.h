@@ -19,7 +19,7 @@
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdTileDim.h,v 1.1.2.1 2006/04/05 02:18:43 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdTileDim.h,v 1.1 2005/12/17 00:29:15 echarles Exp $
 */
 
 class AcdTileDim {
