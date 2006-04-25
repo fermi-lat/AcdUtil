@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Tue Apr 25 11:44:02 PDT 2006
+AcdUtil/cmt
+
+Modified Files:
+      Tag: EM-v6r070329p0
+	requirements 
+Log Message:
+And tag correct versions of the dll stuff
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r1p3em1, operation: add
 Package: AcdUtil
