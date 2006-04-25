@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.1.2.1 2006/04/05 02:18:43 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.1 2005/12/17 00:29:16 echarles Exp $
 //
 //  Implementation file of AcdTileDim 
 //  
