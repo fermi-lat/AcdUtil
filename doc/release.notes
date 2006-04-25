@@ -3,6 +3,21 @@
  Coordinator:H.Kelly
  @verbatim
 
+ v1r1p3   18-Apr-2006 EAC "ideal" now uses built-in code instead of file in calibDB
+ v1r1p2   17-Apr-2006 EAC Added apply_pattern use_CalibData_symbols for windows
+ v1r1p1   17-Apr-2006 EAC Work some obscure magic so that windows understands what to do 
+ v1r1     13-Apr-2006 EAC Pull in updates from branch EM-v6r070329p0, tag v0r2p10em0
+ v1       12-apr-2006 EAC Added AcdCalibSvc
+		So far this handles pedestals and gains (aka mip peaks)
+		Adds a dependency of CalibData
+ v0r3     24-mar-2006 HMK updates for CLHEP 1.9.2.2
+
+Along Branch EM-v6r070329p0
+ v1r1p3em1 25-Apr-2006 EAC pull in requirements file from main branch for AcdCalibSvc 
+ v1r1p3em0 24-Apr-2006 EAC pull in calibration stuff from main branch
+ v0r2p10em0 04-Apr-2006 EAC Cache transform to local coords in AcdTileDim and AcdRibbonDim
+
+ v0r2p10  06-mar-2006 THB use the proper pattern
  v0r2p9   23-Feb-2006 THB make use of static lib constistent with Navid's lib folder
  v0r2p7   07-Feb-2006 THB restore name, make it a static lib.
  v0r2p5   03-Feb-2006 HMK Temporarily update AcdUtilCommon library name to
@@ -12,7 +27,7 @@
  v0r2p2   19-Jan-2006 HMK Update warnings to include volids
  v0r2p1   13-Jan-2006 HMK Update req file to create two shared libraries
           One Gaudi component library and one non-component library
- v0r2     12-Jan-2006 EC  Add AcdTileDim and AcdRibbonDim
+ v0r2     12-Jan-2006 EAC Add AcdTileDim and AcdRibbonDim
  v0r1p1   08-Nov-2005 HMK Small patches to AcdGeometrySvc
  v0r1     08-Nov-2005 HMK Add methods for corner gap rays
  v0       08-Nov-2005 HMK initial import 
