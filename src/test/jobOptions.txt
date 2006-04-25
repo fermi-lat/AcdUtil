@@ -5,8 +5,7 @@ ApplicationMgr.DLLs   = { "GlastSvc", "AcdUtil" };
 
 // List of required services
 ApplicationMgr.ExtSvc = { "GlastDetSvc",  
-//                          "GlastEventSelector/EventSelector" , 
-			  "EventCnvSvc" };
+                          "GlastEventSelector/EventSelector" , "EventCnvSvc" };
 
 
 ApplicationMgr.TopAlg = { "TestAcdUtil" };

@@ -1,7 +1,7 @@
 package AcdUtil
-version v1r1p3
+version v1r1p3em2
 author Heather Kelly <heather@milkyway.gsfc.nasa.gov>
-# $Id: requirements,v 1.19 2006/04/18 01:40:11 echarles Exp $
+# $Id: requirements,v 1.14.2.3 2006/04/25 18:27:50 echarles Exp $
 
 use GlastSvc v*
 use Event v*
@@ -10,8 +10,6 @@ use facilities v*
 use geometry v*
 
 use xmlBase v*         
-
-use CalibData v*
 
 use GlastPolicy v*
 
@@ -24,14 +22,12 @@ apply_pattern library_Llinkopts library=AcdUtilCommon
 #=============================================================
 private
 
-apply_pattern use_CalibData_symbols
 
 library AcdUtilCommon -no_share AcdTileDim.cxx AcdRibbonDim.cxx
 
 
 apply_pattern package_headers
 library AcdUtil AcdGeometrySvc.cxx AcdDetectorList.cxx RayDoca.cxx \
-	        AcdCalibMgr.cxx AcdCalibSvc.cxx \
                 Dll/*.cxx \
                 test/*.cxx \
                 ${AcdUtil_headers}               
