@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdRibbonDim.cxx,v 1.3.2.3 2006/04/06 22:43:19 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdRibbonDim.cxx,v 1.3.2.2 2006/04/06 21:38:07 heather Exp $
 //
 //  Implementation file of AcdRibbonDim 
 //  

@@ -11,11 +11,7 @@
 
 #include "GlastSvc/GlastDetSvc/IGlastDetSvc.h"
 
-class IGlastDetSvc;
-
-#ifndef HepPoint3D
-typedef HepGeom::Point3D<double> HepPoint3D;
-#endif
+class HepPoint3D;
 
 /**
 *  @class AcdRibbonDim
@@ -26,7 +22,7 @@ typedef HepGeom::Point3D<double> HepPoint3D;
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdRibbonDim.h,v 1.1.2.1 2006/04/05 02:18:43 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdRibbonDim.h,v 1.1 2005/12/17 00:29:15 echarles Exp $
 */
 
 class AcdRibbonDim {
