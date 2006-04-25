@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Tue Apr 25 11:27:51 PDT 2006
+AcdUtil/doc
+
+Modified Files:
+      Tag: EM-v6r070329p0
+	release.notes 
+Log Message:
+pull in requirements file from main branch for AcdCalibSvc
+    *
+------------------------------------------------------------
 User: echarles  Tue Apr 25 11:27:50 PDT 2006
 AcdUtil/cmt
 
