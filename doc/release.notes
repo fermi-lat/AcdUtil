@@ -13,6 +13,7 @@
  v0r3     24-mar-2006 HMK updates for CLHEP 1.9.2.2
 
 Along Branch EM-v6r070329p0
+ v1r1p3em4 25-Apr-2006 EAC No really, actually tag the stuff this time
  v1r1p3em3 25-Apr-2006 EAC And tag correct versions of cmt requirements
  v1r1p3em2 25-Apr-2006 EAC And tag correct versions of the dll stuff
  v1r1p3em1 25-Apr-2006 EAC pull in requirements file from main branch for AcdCalibSvc 
