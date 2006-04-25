@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Tue Apr 25 11:27:50 PDT 2006
+AcdUtil/cmt
+
+Modified Files:
+      Tag: EM-v6r070329p0
+	requirements 
+Log Message:
+pull in requirements file from main branch for AcdCalibSvc
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r1p3em0, operation: add
 Package: AcdUtil
