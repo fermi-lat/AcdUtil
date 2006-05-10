@@ -1,7 +1,7 @@
 /** @file IAcdGeometrySvc.h
  @brief Abstract interface to TkrGeometrySvc (q.v.)
 
-  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdGeometrySvc.h,v 1.2.2.1 2006/01/31 19:44:16 usher Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdGeometrySvc.h,v 1.3 2006/03/21 01:44:16 usher Exp $
 */
 
 #ifndef __IACDGEOMETRYSVC_H
@@ -24,6 +24,7 @@ typedef HepGeom::Point3D<double> HepPoint3D;
 #include "AcdUtil/AcdDetectorList.h"
 
 #include <string>
+#include <map>
 
 /** 
  * @class IAcdGeometrySvc
@@ -33,7 +34,7 @@ typedef HepGeom::Point3D<double> HepPoint3D;
  * @author Heather Kelly 
  */
 
-static const InterfaceID IID_IAcdGeometrySvc("IAcdGeometrySvc", 1, 1); 
+static const InterfaceID IID_IAcdGeometrySvc("IAcdGeometrySvc", 1, 2); 
 
 class IAcdGeometrySvc : public virtual IInterface
 {
@@ -62,11 +63,15 @@ public:
 
     virtual const AcdUtil::AcdDetectorList& getDetectorList() const = 0;
 
+    virtual const std::map<idents::AcdId, int>& getAcdIdVolCountCol() const = 0;
 
     virtual bool findDetector(const idents::VolumeIdentifier &volId) const = 0;
 
     virtual StatusCode findCornerGaps() = 0;
     virtual const Ray getCornerGapRay(unsigned int i) const = 0;
+
+    virtual void createVolId(const idents::VolumeIdentifier &orgVolId,
+                     idents::VolumeIdentifier &newVolId, bool bent=false) = 0;
 };
 
 #endif
