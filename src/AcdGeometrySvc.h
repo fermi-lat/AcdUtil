@@ -11,7 +11,7 @@
  * 
  * @author Heather Kelly 
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.3 2006/03/21 01:44:17 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.4 2006/05/10 20:06:23 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -76,12 +76,6 @@ public:
     StatusCode findCornerGaps();
     const Ray getCornerGapRay(unsigned int index) const;
 
-
-   /// Creates a new volume identifier using the original as a template
-   /// If bent == false, will tack on the necessary value to volId for bent vol 
-   /// otherwise, a zero is appended for the main volume.
-   void createVolId(const idents::VolumeIdentifier &orgVolId,
-                     idents::VolumeIdentifier &newVolId, bool bent=false);
 
 private:
 

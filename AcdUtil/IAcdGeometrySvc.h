@@ -1,7 +1,7 @@
 /** @file IAcdGeometrySvc.h
  @brief Abstract interface to TkrGeometrySvc (q.v.)
 
-  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdGeometrySvc.h,v 1.3 2006/03/21 01:44:16 usher Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdGeometrySvc.h,v 1.4 2006/05/10 20:06:22 heather Exp $
 */
 
 #ifndef __IACDGEOMETRYSVC_H
@@ -70,8 +70,6 @@ public:
     virtual StatusCode findCornerGaps() = 0;
     virtual const Ray getCornerGapRay(unsigned int i) const = 0;
 
-    virtual void createVolId(const idents::VolumeIdentifier &orgVolId,
-                     idents::VolumeIdentifier &newVolId, bool bent=false) = 0;
 };
 
 #endif
