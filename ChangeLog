@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed May 10 14:31:46 PDT 2006
+AcdUtil/AcdUtil
+
+Modified Files:
+	IAcdGeometrySvc.h 
+Log Message:
+use idents::volId to get volIds for all volumes
+    *
+------------------------------------------------------------
 User: heather  Wed May 10 13:06:23 PDT 2006
 AcdUtil/src
 
