@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Mar  5 18:36:18 PST 2007
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+EAC Updated to AcdTileDim and adding AcdTileFuncs to handle screw holes
+    *
+------------------------------------------------------------
 User: echarles  Mon Mar  5 17:04:56 PST 2007
 AcdUtil/src
 
