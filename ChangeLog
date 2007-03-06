@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: echarles  Mon Mar  5 17:04:56 PST 2007
+AcdUtil/AcdUtil
+
+Modified Files:
+	AcdTileDim.h 
+Added Files:
+	AcdTileFuncs.h 
+Log Message:
+Added stuff for Holes in tiles
+    *
+------------------------------------------------------------
 User: heather  Fri May 19 11:07:31 PDT 2006
 AcdUtil/cmt
 
