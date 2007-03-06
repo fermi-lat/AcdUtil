@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.2 2006/04/14 00:41:03 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.3 2006/05/17 02:51:36 echarles Exp $
 //
 //  Implementation file of AcdTileDim 
 //  
@@ -142,6 +142,14 @@ StatusCode AcdTileDim::getCorners(const std::vector<double> &dim, const HepPoint
 
   return sc;
 } 
+
+
+StatusCode AcdTileDim::toLocalCoords(const AcdTileDim& dim, 
+				     int region, const double& activeX, const double& activeY,
+				     double& localX, double& localY){
+  localX = localY = 0.;
+  return StatusCode::SUCCESS;
+}
 
 void AcdTileDim::toLocal(const HepPoint3D& global, HepPoint3D& local, int idx) {
   assert(idx < m_nVol);
