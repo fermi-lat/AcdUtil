@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Mar  8 05:55:04 PST 2007
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add AcdTileFuncs to static common lib
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r4, operation: add
 Package: AcdUtil
