@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Mar  8 06:10:44 PST 2007
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+remove AcdTileFuncs to shared lib
+    *
+------------------------------------------------------------
 User: heather  Thu Mar  8 05:55:04 PST 2007
 AcdUtil/cmt
 
