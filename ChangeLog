@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Jun 11 09:13:59 PDT 2007
+AcdUtil/src
+
+Modified Files:
+	AcdDetectorList.cxx 
+Log Message:
+handle changes in segmentation and naming of side ribbons
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r4p1, operation: add
 Package: AcdUtil
