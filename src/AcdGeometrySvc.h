@@ -11,7 +11,7 @@
  * 
  * @author Heather Kelly 
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.4 2006/05/10 20:06:23 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.5 2006/05/10 21:31:46 heather Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -76,6 +76,11 @@ public:
     StatusCode findCornerGaps();
     const Ray getCornerGapRay(unsigned int index) const;
 
+    /// Given an AcdId, provide three vectors of Rays.  Each vector pertains to one set of ribbon segments
+    bool fillRibbonRays(idents::AcdId& id,
+                 std::vector<Ray>& minusSideRays,
+                 std::vector<Ray>& topRays,
+                 std::vector<Ray>& plusSideRays, bool increasing = true);
 
 private:
 

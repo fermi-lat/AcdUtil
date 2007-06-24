@@ -1,7 +1,7 @@
 #define TestAcdUtil_CXX
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.2 2005/11/09 01:08:57 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.3 2006/01/23 20:34:00 heather Exp $
 // Description:
 // Test for AcdUtil class. 
 
@@ -27,7 +27,7 @@
  *
  * Exercise all of AcdUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.2 2005/11/09 01:08:57 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.3 2006/01/23 20:34:00 heather Exp $
  */
 
 class TestAcdUtil : public Algorithm {
@@ -146,6 +146,41 @@ StatusCode TestAcdUtil::execute() {
                 << start[1].x() << "," << start[1].y() << "," << start[1].z()
                 << ") end:(" << end[1].x() << "," << end[1].y() << ","
                 << end[1].z() << ") halfWid: " << halfWidth[1] << std::endl;
+
+            std::vector<Ray> minusSideRays, topRays, plusSideRays;
+            m_acdGeoSvc->fillRibbonRays(acdId, minusSideRays, topRays, plusSideRays, true);
+            std::vector<Ray>::const_iterator rayIt;
+            Point pos;
+            Vector dir;
+            double len;
+            log << MSG::DEBUG << "MinusSideRays: " << endreq;
+            for (rayIt = minusSideRays.begin(); rayIt != minusSideRays.end(); rayIt++) {
+                pos = (*rayIt).position();
+                dir = (*rayIt).direction();
+                len = (*rayIt).getArcLength();
+                log << MSG::DEBUG << "Pos: ( " << pos.x() << ", " << pos.y() << ", " << pos.z() << ")" << endreq;
+                log << MSG::DEBUG << "Dir: ( " << dir.x() << ", " << dir.y() << ", " << dir.z() << ")" << endreq;
+                log << MSG::DEBUG << "ArcLength: " << len << endreq;
+            }
+            log << MSG::DEBUG << "TopRays: " << endreq;
+            for (rayIt = topRays.begin(); rayIt != topRays.end(); rayIt++) {
+                pos = (*rayIt).position();
+                dir = (*rayIt).direction();
+                len = (*rayIt).getArcLength();
+                log << MSG::DEBUG << "Pos: ( " << pos.x() << ", " << pos.y() << ", " << pos.z() << ")" << endreq;
+                log << MSG::DEBUG << "Dir: ( " << dir.x() << ", " << dir.y() << ", " << dir.z() << ")" << endreq;
+                log << MSG::DEBUG << "ArcLength: " << len << endreq;
+            }
+            log << MSG::DEBUG << "PlusSideRays: " << endreq;
+            for (rayIt = plusSideRays.begin(); rayIt != plusSideRays.end(); rayIt++) {
+                pos = (*rayIt).position();
+                dir = (*rayIt).direction();
+                len = (*rayIt).getArcLength();
+                log << MSG::DEBUG << "Pos: ( " << pos.x() << ", " << pos.y() << ", " << pos.z() << ")" << endreq;
+                log << MSG::DEBUG << "Dir: ( " << dir.x() << ", " << dir.y() << ", " << dir.z() << ")" << endreq;
+                log << MSG::DEBUG << "ArcLength: " << len << endreq;
+            }
+
         }
 
     }
