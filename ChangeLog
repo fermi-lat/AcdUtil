@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Sat Jun 23 20:00:01 PDT 2007
+AcdUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+add fillRibbonRays to AcdGeoSvc
+    *
+------------------------------------------------------------
+User: heather  Sat Jun 23 20:00:01 PDT 2007
 AcdUtil/cmt
 
 Modified Files:
