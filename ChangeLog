@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Sat Jun 23 20:00:01 PDT 2007
+AcdUtil/AcdUtil
+
+Modified Files:
+	IAcdGeometrySvc.h 
+Log Message:
+add fillRibbonRays to AcdGeoSvc
+    *
+------------------------------------------------------------
 User: heather  Mon Jun 11 09:13:59 PDT 2007
 AcdUtil/src
 
