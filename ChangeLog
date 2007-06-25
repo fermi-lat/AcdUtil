@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Jun 25 09:09:28 PDT 2007
+AcdUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+fixes for modified side ribbon segments to include pieces for bent tiles
+    *
+------------------------------------------------------------
+User: heather  Mon Jun 25 09:09:28 PDT 2007
 AcdUtil/cmt
 
 Modified Files:
