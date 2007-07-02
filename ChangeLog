@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Mon Jul  2 12:21:35 PDT 2007
+AcdUtil/src/test
+
+Modified Files:
+	TestAcdUtil.cxx 
+Log Message:
+move most geometry discovery stuff to AcdGeometrySvc
+    *
+------------------------------------------------------------
+User: echarles  Mon Jul  2 12:21:35 PDT 2007
 AcdUtil/src
 
 Modified Files:
