@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Jul 13 17:51:10 PDT 2007
+AcdUtil/AcdUtil
+
+Modified Files:
+	AcdRibbonDim.h IAcdGeometrySvc.h 
+Log Message:
+updated AcdGeomSvc to return HepTransforms for ribbons by side
+    *
+------------------------------------------------------------
 User: echarles  Mon Jul  2 12:21:35 PDT 2007
 AcdUtil/src/test
 
