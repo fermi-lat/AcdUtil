@@ -20,7 +20,7 @@
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdRibbonDim.h,v 1.3 2006/04/14 00:41:02 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdRibbonDim.h,v 1.4 2007/07/02 19:21:33 echarles Exp $
 */
 
 class AcdRibbonDim {
@@ -53,7 +53,7 @@ public:
   inline const std::vector<Ray>& topRays() const { return m_topRays; }      
   inline const std::vector<Ray>& plusSideRays() const { return m_plusSideRays; }        
 
-  inline bool setEdgeRay(int iSeg, HepPoint3D& start, HepVector3D& vector) const;
+  bool setEdgeRay(int iSeg, HepPoint3D& start, HepVector3D& vector) const;
 
   void toLocal(const HepPoint3D& global, int segment, HepPoint3D& local) const;
 
