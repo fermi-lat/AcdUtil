@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdRibbonDim.cxx,v 1.5 2006/05/10 20:06:23 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdRibbonDim.cxx,v 1.6 2007/07/02 19:21:35 echarles Exp $
 //
 //  Implementation file of AcdRibbonDim 
 //  
@@ -38,16 +38,8 @@ StatusCode AcdRibbonDim::getVals() {
   
   int minusFace = m_acdId.ribbonOrientation() == ribbonX ? 1 : 2;
   int plusFace = m_acdId.ribbonOrientation() == ribbonX ? 3 : 4;
-  
-  isOk = m_acdGeomSvc.fillRibbonTransform(minusFace,m_minusSideRays[0],m_minusSideTransform);
-  if ( ! isOk ) {
-    return StatusCode::FAILURE;
-  }
-  isOk = m_acdGeomSvc.fillRibbonTransform(plusFace,m_plusSideRays[0],m_plusSideTransform);
-  if ( ! isOk ) {
-    return StatusCode::FAILURE;
-  }
-  isOk = m_acdGeomSvc.fillRibbonTransform(0,m_topRays[0],m_topTransform);
+
+  isOk = m_acdGeomSvc.fillRibbonTransforms(m_acdId,m_minusSideTransform,m_topTransform,m_plusSideTransform);
   if ( ! isOk ) {
     return StatusCode::FAILURE;
   }

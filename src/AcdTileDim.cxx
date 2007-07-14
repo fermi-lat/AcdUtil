@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.4 2007/03/06 01:04:56 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.5 2007/07/02 19:21:35 echarles Exp $
 //
 //  Implementation file of AcdTileDim 
 //  
@@ -36,7 +36,9 @@ StatusCode AcdTileDim::getVals() {
   if ( ! isOk ) return StatusCode::FAILURE;
 
   for ( int iVol(0); iVol < m_nVol; iVol++ ) {
-    isOk = m_acdGeomSvc.fillTileData(m_acdId,iVol,m_dim[iVol],m_tileCenter[iVol],m_corners[iVol]);
+ 
+    m_dim[iVol].clear();
+    isOk = m_acdGeomSvc.fillTileData(m_acdId,iVol,m_face[iVol],m_dim[iVol],m_tileCenter[iVol],m_corners[iVol]);
     if ( ! isOk ) return StatusCode::FAILURE;
     isOk = m_acdGeomSvc.fillTileTransform(m_acdId,iVol,m_transform[iVol]);
     if ( ! isOk ) return StatusCode::FAILURE;
