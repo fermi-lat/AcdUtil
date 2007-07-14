@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Fri Jul 13 17:54:21 PDT 2007
+AcdUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+v1r6     13-Jul-2007 EAC Added method to get HepTransforms for side ribbons
+    *
+------------------------------------------------------------
+User: echarles  Fri Jul 13 17:54:21 PDT 2007
 AcdUtil/cmt
 
 Modified Files:
