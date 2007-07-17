@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Jul 17 11:35:47 PDT 2007
+AcdUtil/AcdUtil
+
+Modified Files:
+	IAcdGeometrySvc.h 
+Log Message:
+patch for win compilation
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r6, operation: add
 Package: AcdUtil
