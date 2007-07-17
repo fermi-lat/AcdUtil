@@ -11,7 +11,7 @@
  * 
  * @author Heather Kelly 
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.7 2007/07/02 19:21:35 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.8 2007/07/14 00:51:10 echarles Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -106,7 +106,7 @@ public:
 
     /// Given an AcdId, provide information about which volume edges are shared
     virtual bool fillTileSharedEdgeData(const idents::AcdId& id, 
-					const std::vector<double>& dim1, const std::vector<double>& dim1,
+					const std::vector<double>& dim1, const std::vector<double>& dim2,
 					int& sharedEdge1, int& sharedEdge2,
 					float& sharedWidth1, float& sharedWidth2);
 
