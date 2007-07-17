@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Tue Jul 17 11:35:48 PDT 2007
+AcdUtil/src
+
+Modified Files:
+	AcdGeometrySvc.h 
+Log Message:
+patch for win compilation
+    *
+------------------------------------------------------------
+User: heather  Tue Jul 17 11:35:48 PDT 2007
 AcdUtil/doc
 
 Modified Files:
