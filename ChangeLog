@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Jul 26 07:06:03 PDT 2007
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch for new volume names
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r6p1, operation: add
 Package: AcdUtil
