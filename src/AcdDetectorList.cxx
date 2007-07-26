@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdDetectorList.cxx,v 1.2 2006/05/10 20:06:23 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdDetectorList.cxx,v 1.3 2007/06/11 16:13:59 heather Exp $
 // Description:
 
 #include "AcdUtil/AcdDetectorList.h"
@@ -20,7 +20,10 @@ AcdDetectorList::pushShape(ShapeType s, const UintVector& idvec,
     }
 
     // is this what we want? add to the list if so and abort
-    if (name.substr(0,7)=="topTile") {
+    if ( (name.substr(0,7)=="topTile") || (name.substr(0,7)=="tile_f0") ) {
+        this->push_back(getId());
+        return AbortSubtree;
+    } else if (name.substr(0,6)=="tile_f") { // prepare for side tile name changes for upcoming screws
         this->push_back(getId());
         return AbortSubtree;
     } else if (name.substr(0,8)=="sideTile" ) {
