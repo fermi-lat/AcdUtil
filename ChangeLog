@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Jul 30 11:56:58 PDT 2007
+AcdUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Added methods to get total length of ribbons from AcdRibbonDim
+    *
+------------------------------------------------------------
 User: echarles  Mon Jul 30 11:56:57 PDT 2007
 AcdUtil/cmt
 
