@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sat Aug 11 16:35:24 PDT 2007
+AcdUtil/AcdUtil
+
+Modified Files:
+	IAcdGeometrySvc.h 
+Log Message:
+Add and test utility IAcdGeometrySvd::getReferenceFrame
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r7, operation: add
 Package: AcdUtil
