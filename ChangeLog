@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jrb  Sat Aug 11 16:35:24 PDT 2007
+AcdUtil/src
+
+Modified Files:
+	AcdGeometrySvc.cxx AcdGeometrySvc.h 
+Log Message:
+Add and test utility IAcdGeometrySvd::getReferenceFrame
+
+    *
+------------------------------------------------------------
+User: jrb  Sat Aug 11 16:35:24 PDT 2007
 AcdUtil/AcdUtil
 
 Modified Files:
