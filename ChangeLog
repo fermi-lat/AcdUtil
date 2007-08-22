@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: echarles  Wed Aug 22 16:25:09 PDT 2007
+AcdUtil/src
+
+Modified Files:
+	AcdGeometrySvc.cxx AcdGeometrySvc.h AcdTileDim.cxx 
+	AcdTileFuncs.cxx 
+Added Files:
+	AcdFrameUtil.cxx 
+Log Message:
+reorginize for tilted tiles/ ribbons
+    *
+------------------------------------------------------------
+User: echarles  Wed Aug 22 16:25:09 PDT 2007
 AcdUtil/cmt
 
 Modified Files:
