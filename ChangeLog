@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: echarles  Wed Aug 22 16:25:08 PDT 2007
+AcdUtil/AcdUtil
+
+Modified Files:
+	AcdTileDim.h AcdTileFuncs.h IAcdGeometrySvc.h 
+Added Files:
+	AcdFrameUtil.h AcdGeomMap.h 
+Log Message:
+reorginize for tilted tiles/ ribbons
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r8, operation: add
 Package: AcdUtil
