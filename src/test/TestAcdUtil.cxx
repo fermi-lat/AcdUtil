@@ -1,7 +1,7 @@
 #define TestAcdUtil_CXX
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.5 2007/07/02 19:21:35 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.6 2007/08/11 23:35:24 jrb Exp $
 // Description:
 // Test for AcdUtil class. 
 
@@ -20,6 +20,8 @@
 #include "AcdUtil/IAcdGeometrySvc.h"
 #include "AcdUtil/AcdDetectorList.h"
 #include "AcdUtil/AcdRibbonDim.h"
+#include "AcdUtil/AcdTileDim.h"
+#include "AcdUtil/AcdFrameUtil.h"
 
 
 /** @class TestAcdUtil
@@ -27,7 +29,7 @@
  *
  * Exercise all of AcdUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.5 2007/07/02 19:21:35 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.6 2007/08/11 23:35:24 jrb Exp $
  */
 
 class TestAcdUtil : public Algorithm {
@@ -81,7 +83,7 @@ StatusCode TestAcdUtil::initialize() {
         return sc;
     }
 
-    m_acdGeoSvc->findCornerGaps();
+    //m_acdGeoSvc->findCornerGaps();
 
     return sc;
 }
@@ -112,36 +114,24 @@ StatusCode TestAcdUtil::execute() {
             log << MSG::WARNING << "Failed to find " << volid.name() << endreq;
             return StatusCode::FAILURE;
         }
+	
+	idents::AcdId acdId(volid);
 
-        std::vector<double> dim;
-        HepPoint3D center;
- 
-        sc = m_acdGeoSvc->getDetectorDimensions(volid, dim, center);
-        if (sc.isFailure()) {
-           log << MSG::WARNING << "Failed to find dimensions for " <<
-               volid.name() << endreq;
-           return sc;
-        } 
+	if ( acdId.tile() ) { 
+	  // Test creation of AcdTileDim
+	  AcdTileDim aTile(acdId,*m_acdGeoSvc);
+	  int section = volid[5];
 
-        idents::AcdId acdId(volid);
-        log << MSG::INFO << "AcdId: " << acdId.id() << " Dimensions: " 
-            << dim[0] << ", " << dim[1] << ", " << dim[2] << endreq;
+	  log << MSG::INFO << "AcdId: " << acdId.id() << " Dimensions: " 
+	      << aTile.dim(section)[0] << ", " << aTile.dim(section)[1] << ", " << aTile.dim(section)[2] << endreq;
 
-        HepPoint3D corner[4];
-        sc = m_acdGeoSvc->getCorners(dim, center, corner);
-        if (sc.isFailure()) {
-           log << MSG::WARNING << "Failed to find corners for " <<
-               volid.name() << endreq;
-           return sc;
-        } 
-        unsigned int iCorner;
-        for (iCorner = 0; iCorner<4; iCorner++) {
-            log << "Corner " << iCorner << " " << corner[iCorner].x() 
-                << ", " << corner[iCorner].y() << ", " << corner[iCorner].z()
+	  unsigned int iCorner;
+	  for (iCorner = 0; iCorner<4; iCorner++) {
+            log << "Corner " << iCorner << " " << aTile.corner(section)[iCorner].x() 
+                << ", " << aTile.corner(section)[iCorner].y() << ", " << aTile.corner(section)[iCorner].z()
                 << endreq;
-        }
-
-        if (acdId.ribbon()) {
+	  }	  
+	} else if (acdId.ribbon()) {
             // Test Creation of RibbonDim
 	    AcdRibbonDim ribbonDim(acdId,*m_acdGeoSvc);
             //const HepPoint3D* start = ribbonDim.ribbonStart();
@@ -270,7 +260,7 @@ void TestAcdUtil::writeTileFrame(unsigned face, unsigned row,
   idents::AcdId aid(0, face, row, col);
   idents::VolumeIdentifier vid = aid.volId(bent);
 
-  IAcdGeometrySvc::AcdReferenceFrame frame =
+  AcdFrameUtil::AcdReferenceFrame frame =
     m_acdGeoSvc->getReferenceFrame(vid);
   (*m_log) << MSG::INFO << vid.name() << " has reference frame "
            << frame << endreq;
@@ -288,7 +278,7 @@ void TestAcdUtil::writeRibbonFrame(unsigned face, unsigned orient,
   vid.append(rib);   // ribbon number.  
   vid.append(seg);   // segment
 
-  IAcdGeometrySvc::AcdReferenceFrame frame 
+  AcdFrameUtil::AcdReferenceFrame frame 
     =  m_acdGeoSvc->getReferenceFrame(vid);
   (*m_log) << MSG::INFO << vid.name() << " has reference frame "
            << frame << endreq;

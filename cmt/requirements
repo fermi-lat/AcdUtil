@@ -2,7 +2,7 @@ package AcdUtil
 version v1r8
 author Heather Kelly <heather@slac.stanford.edu>
 author Eric Charles <echarles@slac.stanford.edu>
-# $Id: requirements,v 1.35 2007/07/30 18:56:57 echarles Exp $
+# $Id: requirements,v 1.36 2007/08/22 22:48:33 jrb Exp $
 
 use GlastSvc v*
 use Event v*
@@ -27,7 +27,7 @@ private
 
 apply_pattern use_CalibData_symbols
 
-library AcdUtilCommon -no_share AcdTileDim.cxx AcdRibbonDim.cxx AcdTileFuncs.cxx
+library AcdUtilCommon -no_share AcdTileDim.cxx AcdRibbonDim.cxx AcdTileFuncs.cxx AcdFrameUtil.cxx
 
 
 apply_pattern package_headers
