@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Aug 24 15:17:52 PDT 2007
+AcdUtil/AcdUtil
+
+Modified Files:
+	IAcdGeometrySvc.h 
+Log Message:
+Changes to handle tilted tiles/ ribbons
+    *
+------------------------------------------------------------
 User: echarles  Wed Aug 22 16:25:10 PDT 2007
 AcdUtil/src/test
 
