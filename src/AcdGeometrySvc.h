@@ -11,7 +11,7 @@
  * 
  * @author Heather Kelly 
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.10 2007/08/11 23:35:24 jrb Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.11 2007/08/22 23:25:09 echarles Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -111,12 +111,13 @@ public:
 
     AcdFrameUtil::AcdReferenceFrame getReferenceFrame(const idents::VolumeIdentifier &volId);
 
+    StatusCode findCornerGaps();
+
 protected:
 
     /// Used in initializing 
     StatusCode getConstants();
     StatusCode getDetectorListFromGeometry();
-    StatusCode findCornerGaps();
 
     // Utilities
     StatusCode getDimensions(const idents::VolumeIdentifier &volIId, 
