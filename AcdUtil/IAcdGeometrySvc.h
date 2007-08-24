@@ -1,7 +1,7 @@
 /** @file IAcdGeometrySvc.h
  @brief Abstract interface to TkrGeometrySvc (q.v.)
 
-  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdGeometrySvc.h,v 1.10 2007/08/11 23:35:24 jrb Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdGeometrySvc.h,v 1.11 2007/08/22 23:25:08 echarles Exp $
 */
 
 #ifndef __IACDGEOMETRYSVC_H
@@ -105,6 +105,9 @@ public:
 					float& sharedWidth1, float& sharedWidth2) = 0;
 
     virtual AcdFrameUtil::AcdReferenceFrame getReferenceFrame(const idents::VolumeIdentifier &volId) = 0;
+
+    virtual StatusCode findCornerGaps() = 0;
+
 
 };
 

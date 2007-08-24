@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.6 2007/07/14 00:51:10 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.7 2007/08/22 23:25:09 echarles Exp $
 //
 //  Implementation file of AcdTileDim 
 //  
@@ -44,6 +44,7 @@ StatusCode AcdTileDim::getVals() {
     HepTransform3D inverseT = m_transform[iVol].inverse();
     HepVector3D xV(1.,0.,0.); HepVector3D yV(0.,1.,0.);
     xV = inverseT * xV; yV = inverseT * yV;
+    m_localFrameVectors[iVol] = HepMatrix(2,3);
     m_localFrameVectors[iVol](1,1) = xV.x(); m_localFrameVectors[iVol](1,2) = xV.y(); m_localFrameVectors[iVol](1,3) = xV.z(); 
     m_localFrameVectors[iVol](2,1) = yV.x(); m_localFrameVectors[iVol](2,2) = yV.y(); m_localFrameVectors[iVol](2,3) = yV.z(); 
   }
