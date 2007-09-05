@@ -1,7 +1,7 @@
 #define TestAcdUtil_CXX
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.6 2007/08/11 23:35:24 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.7 2007/08/22 23:25:09 echarles Exp $
 // Description:
 // Test for AcdUtil class. 
 
@@ -29,7 +29,7 @@
  *
  * Exercise all of AcdUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.6 2007/08/11 23:35:24 jrb Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.7 2007/08/22 23:25:09 echarles Exp $
  */
 
 class TestAcdUtil : public Algorithm {
@@ -193,6 +193,7 @@ StatusCode TestAcdUtil::execute() {
     writeTileFrame(0, 0, 0, true);
 
     writeTileFrame(2, 1, 2);
+    writeTileFrame(0, 2, 2);
     writeTileFrame(0, 4, 2);
     writeTileFrame(0, 4, 2, true);
 
