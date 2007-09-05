@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Wed Sep  5 12:03:59 PDT 2007
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Fix up unit test, add some comments
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r9p1, operation: add
 Package: AcdUtil
