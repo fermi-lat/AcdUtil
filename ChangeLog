@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Tue Sep  4 18:54:47 PDT 2007
+AcdUtil/src
+
+Modified Files:
+	AcdFrameUtil.cxx 
+Log Message:
+Comment out debugging printout
+    *
+------------------------------------------------------------
+User: echarles  Tue Sep  4 18:54:47 PDT 2007
 AcdUtil/doc
 
 Modified Files:
