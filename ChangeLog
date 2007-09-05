@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Wed Sep  5 12:04:00 PDT 2007
+AcdUtil/src
+
+Modified Files:
+	AcdGeometrySvc.cxx 
+Log Message:
+Fix up unit test, add some comments
+    *
+------------------------------------------------------------
 User: echarles  Wed Sep  5 12:03:59 PDT 2007
 AcdUtil/doc
 
