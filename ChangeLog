@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Sep 12 06:17:04 PDT 2007
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+try out ICalibPathSvc
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r9p2, operation: add
 Package: AcdUtil
