@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Wed Sep 12 06:17:04 PDT 2007
+AcdUtil/src
+
+Modified Files:
+	AcdCalibMgr.cxx AcdCalibMgr.h AcdCalibSvc.cxx AcdCalibSvc.h 
+	AcdGainCalibMgr.h AcdPedCalibMgr.h 
+Log Message:
+try out ICalibPathSvc
+    *
+------------------------------------------------------------
+User: heather  Wed Sep 12 06:17:04 PDT 2007
 AcdUtil/doc
 
 Modified Files:
