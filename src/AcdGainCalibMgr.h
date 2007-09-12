@@ -1,12 +1,15 @@
 #ifndef AcdGainCalibMgr_H
 #define AcdGainCalibMgr_H
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGainCalibMgr.h,v 1.1 2006/04/12 18:16:04 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGainCalibMgr.h,v 1.2 2006/04/18 20:57:42 echarles Exp $
 // LOCAL
 #include "AcdCalibMgr.h"
 
 // GLAST
 #include "CalibData/Acd/AcdGain.h"
-#include "CalibData/CalibModel.h"
+//#include "CalibData/CalibModel.h"
+#include "CalibSvc/ICalibPathSvc.h"
+
+
 
 // EXTLIB
 // STD
@@ -22,7 +25,8 @@ class AcdCalibSvc;
 class AcdGainCalibMgr : public AcdCalibMgr {
 public:
   AcdGainCalibMgr() : 
-    AcdCalibMgr(CalibData::ACD_ElecGain)
+      AcdCalibMgr(ICalibPathSvc::CalibItem::Calib_ACD_ElecGain)
+//    AcdCalibMgr(CalibData::ACD_ElecGain)
   {};
   
   /// get mip peak vals for given channel

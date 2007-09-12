@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdCalibMgr.cxx,v 1.1 2006/04/12 18:16:04 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdCalibMgr.cxx,v 1.2 2006/04/18 20:57:42 echarles Exp $
 /** @file
     @author Eric Charles (From Zach Fewtrell's CalibItemMgr)
  */
@@ -24,7 +24,9 @@ StatusCode AcdCalibMgr::initialize(const std::string &flavor, const AcdCalibSvc 
   
   m_flavor = flavor;
 
-  m_calibPath = m_calibTypePath + '/' + flavor;
+  //m_calibPath = m_calibTypePath + '/' + flavor;
+   m_calibPath =  owner->getCalibPath(m_calibItem, m_flavor);
+
 
   static std::string idealName("ideal");
   if ( flavor == idealName ) {
