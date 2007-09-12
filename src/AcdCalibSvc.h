@@ -1,6 +1,6 @@
 #ifndef AcdCalibSvc_H
 #define AcdCalibSvc_H
-// $Header: /nfs/slac/g/glast/ground/cvs/CalXtalResponse/src/CalCalib/CalCalibSvc.h,v 1.6 2006/03/21 01:39:05 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdCalibSvc.h,v 1.1 2006/04/12 18:16:04 echarles Exp $
 
 // LOCAL 
 #include "AcdPedCalibMgr.h"
@@ -8,6 +8,8 @@
 
 // GLAST 
 #include "AcdUtil/IAcdCalibSvc.h"
+#include "CalibSvc/ICalibPathSvc.h"
+
 
 // EXTLIB
 #include "GaudiKernel/IDataProviderSvc.h"
@@ -48,6 +50,8 @@ public:
   /// return the service type
   const InterfaceID&  AcdCalibSvc::type () const {return IID_IAcdCalibSvc;}
 
+  const std::string getCalibPath(const ICalibPathSvc::CalibItem item, const std::string& flavor="") const;
+
   /// get pedestal vals for given channel
   StatusCode getPedestal(idents::AcdId id, unsigned pmt,
 			 CalibData::AcdPed*& pedestal){
@@ -79,11 +83,12 @@ private:
 
   // GAUDI RESOURCES
   /// pointer to CalibDataSvc
-  IService         *m_calibDataSvc;     
+  IService         *m_calibDataSvc;   
+
+  ICalibPathSvc    *m_calibPathSvc;
 
   /// pointer to IDataProviderSvc interface of CalibDataSvc
-  IDataProviderSvc *m_dataProviderSvc;  
- 
+  IDataProviderSvc *m_dataProviderSvc;   
 
   /// The pedestal manager
   AcdPedCalibMgr    m_pedMgr;

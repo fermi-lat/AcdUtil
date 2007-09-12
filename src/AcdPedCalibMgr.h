@@ -1,12 +1,14 @@
 #ifndef PedMgr_H
 #define PedMgr_H
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdPedCalibMgr.h,v 1.1 2006/04/12 18:16:04 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdPedCalibMgr.h,v 1.2 2006/04/18 20:57:42 echarles Exp $
 // LOCAL
 #include "AcdCalibMgr.h"
 
 // GLAST
 #include "CalibData/Acd/AcdPed.h"
-#include "CalibData/CalibModel.h"
+//#include "CalibData/CalibModel.h"
+#include "CalibSvc/ICalibPathSvc.h"
+
 
 // EXTLIB
 // STD
@@ -23,7 +25,8 @@ class AcdCalibSvc;
 class AcdPedCalibMgr : public AcdCalibMgr {
 public:
   AcdPedCalibMgr() : 
-    AcdCalibMgr(CalibData::ACD_Ped)
+      AcdCalibMgr(ICalibPathSvc::CalibItem::Calib_ACD_Ped)
+//    AcdCalibMgr(CalibData::ACD_Ped)
   {};
   
   /// get pedestal vals for given channel
@@ -56,7 +59,7 @@ public:
   }
   
 private:
-  
+
 };
 
 #endif
