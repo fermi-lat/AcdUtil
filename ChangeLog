@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Sep 13 18:22:18 PDT 2007
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch use of enums
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r10, operation: add
 Package: AcdUtil
