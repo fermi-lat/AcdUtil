@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Thu Sep 13 18:22:18 PDT 2007
+AcdUtil/src
+
+Modified Files:
+	AcdGainCalibMgr.h AcdPedCalibMgr.h 
+Log Message:
+patch use of enums
+    *
+------------------------------------------------------------
+User: heather  Thu Sep 13 18:22:18 PDT 2007
 AcdUtil/doc
 
 Modified Files:
