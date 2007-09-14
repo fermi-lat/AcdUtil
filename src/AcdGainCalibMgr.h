@@ -1,6 +1,6 @@
 #ifndef AcdGainCalibMgr_H
 #define AcdGainCalibMgr_H
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGainCalibMgr.h,v 1.2 2006/04/18 20:57:42 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGainCalibMgr.h,v 1.3 2007/09/12 13:17:04 heather Exp $
 // LOCAL
 #include "AcdCalibMgr.h"
 
@@ -25,7 +25,7 @@ class AcdCalibSvc;
 class AcdGainCalibMgr : public AcdCalibMgr {
 public:
   AcdGainCalibMgr() : 
-      AcdCalibMgr(ICalibPathSvc::CalibItem::Calib_ACD_ElecGain)
+      AcdCalibMgr(ICalibPathSvc::Calib_ACD_ElecGain)
 //    AcdCalibMgr(CalibData::ACD_ElecGain)
   {};
   
