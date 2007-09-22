@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Fri Sep 21 19:01:14 PDT 2007
+AcdUtil/src
+
+Modified Files:
+	AcdGeometrySvc.cxx AcdGeometrySvc.h AcdRibbonDim.cxx 
+Log Message:
+switch to using hardcoded constants in AcdGeometrySvc to distinguish various ribbon properties
+    *
+------------------------------------------------------------
+User: echarles  Fri Sep 21 19:01:14 PDT 2007
 AcdUtil/AcdUtil
 
 Modified Files:
