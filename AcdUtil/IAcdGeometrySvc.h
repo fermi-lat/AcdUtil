@@ -1,7 +1,7 @@
 /** @file IAcdGeometrySvc.h
  @brief Abstract interface to TkrGeometrySvc (q.v.)
 
-  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdGeometrySvc.h,v 1.11 2007/08/22 23:25:08 echarles Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdGeometrySvc.h,v 1.12 2007/08/24 22:17:52 echarles Exp $
 */
 
 #ifndef __IACDGEOMETRYSVC_H
@@ -37,7 +37,7 @@ class AcdGeomMap;
  * @author Heather Kelly 
  */
 
-static const InterfaceID IID_IAcdGeometrySvc("IAcdGeometrySvc", 1, 3); 
+static const InterfaceID IID_IAcdGeometrySvc("IAcdGeometrySvc", 1, 4); 
 
 class IAcdGeometrySvc : public virtual IInterface
 {
@@ -74,16 +74,13 @@ public:
 
 
     /// Given an AcdId, provide three vectors of Rays.  Each vector pertains to one set of ribbon segments
-    virtual bool fillRibbonRays(const idents::AcdId& id,
+    virtual bool fillRibbonData(const idents::AcdId& id,
 				std::vector<Ray>& minusSideRays,
 				std::vector<Ray>& topRays,
-				std::vector<Ray>& plusSideRays, bool increasing = true) = 0;
-
-    /// Given an AcdId for a ribbon, provide the transformation to the center of each set of ribbon segments
-    virtual bool fillRibbonTransforms(const idents::AcdId& id,
-				      HepTransform3D& minusSideTransform,
-				      HepTransform3D& topTransform,
-				      HepTransform3D& plusTransform) = 0;		    
+				std::vector<Ray>& plusSideRays, 
+				HepTransform3D& minusSideTransform,
+				HepTransform3D& topTransform,
+				HepTransform3D& plusTransform) = 0;
 
     // Return half ribbon width
     virtual double ribbonHalfWidth() const = 0;    
@@ -104,7 +101,7 @@ public:
 					int& sharedEdge1, int& sharedEdge2,
 					float& sharedWidth1, float& sharedWidth2) = 0;
 
-    virtual AcdFrameUtil::AcdReferenceFrame getReferenceFrame(const idents::VolumeIdentifier &volId) = 0;
+    virtual AcdFrameUtil::AcdReferenceFrame getReferenceFrame(const idents::VolumeIdentifier &volId) const = 0;
 
     virtual StatusCode findCornerGaps() = 0;
 
