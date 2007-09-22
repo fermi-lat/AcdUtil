@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Sep 21 19:01:14 PDT 2007
+AcdUtil/AcdUtil
+
+Modified Files:
+	IAcdGeometrySvc.h 
+Log Message:
+switch to using hardcoded constants in AcdGeometrySvc to distinguish various ribbon properties
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r10p1, operation: add
 Package: AcdUtil
