@@ -1,7 +1,7 @@
 #define TestAcdUtil_CXX
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.7 2007/08/22 23:25:09 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.8 2007/09/05 19:04:00 echarles Exp $
 // Description:
 // Test for AcdUtil class. 
 
@@ -29,7 +29,7 @@
  *
  * Exercise all of AcdUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.7 2007/08/22 23:25:09 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.8 2007/09/05 19:04:00 echarles Exp $
  */
 
 class TestAcdUtil : public Algorithm {
@@ -145,7 +145,8 @@ StatusCode TestAcdUtil::execute() {
               //  << end[1].z() << ") halfWid: " << halfWidth[1] << std::endl;
 
             std::vector<Ray> minusSideRays, topRays, plusSideRays;
-            m_acdGeoSvc->fillRibbonRays(acdId, minusSideRays, topRays, plusSideRays, true);
+	    HepTransform3D minusSideTransform, topTransform, plusSideTransform;
+            m_acdGeoSvc->fillRibbonData(acdId, minusSideRays, topRays, plusSideRays, minusSideTransform, topTransform, plusSideTransform);
             std::vector<Ray>::const_iterator rayIt;
             Point pos;
             Vector dir;
