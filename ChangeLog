@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Sep 21 19:01:46 PDT 2007
+AcdUtil/src/test
+
+Modified Files:
+	TestAcdUtil.cxx 
+Log Message:
+switch to using hardcoded constants in AcdGeometrySvc to distinguish various ribbon properties
+    *
+------------------------------------------------------------
 User: echarles  Fri Sep 21 19:01:14 PDT 2007
 AcdUtil/src
 
