@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Sep 21 19:15:47 PDT 2007
+AcdUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tag v1r11 Fix problem with ribbon numbering and switch to using data statments to define ribbon segment types
+    *
+------------------------------------------------------------
 User: echarles  Fri Sep 21 19:15:46 PDT 2007
 AcdUtil/cmt
 
