@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: echarles  Mon Sep 24 11:29:38 PDT 2007
+AcdUtil/src
+
+Modified Files:
+	AcdCalibSvc.cxx AcdCalibSvc.h 
+Added Files:
+	AcdCnoCalibMgr.h AcdCoherentNoiseCalibMgr.h 
+	AcdHighRangeCalibMgr.h AcdRangeCalibMgr.h AcdVetoCalibMgr.h 
+Log Message:
+added calib mgrs for new calibrations
+    *
+------------------------------------------------------------
 TAG
 Tag name: v1r11, operation: add
 Package: AcdUtil
