@@ -1,33 +1,4 @@
 ------------------------------------------------------------
-User: echarles  Tue Oct  9 11:37:21 PDT 2007
-AcdUtil/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-Rework AcdCalibSvc.  Split in AcdCalibSvc and AcdSimCalibSvc.  Use new calibration managers w/ templated code in CalibData/ CalibSvc.  Add activeDistance calculation to AcdTileDim so that same function gets used in sim and in recon
-    *
-------------------------------------------------------------
-User: echarles  Tue Oct  9 11:37:21 PDT 2007
-AcdUtil/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-Rework AcdCalibSvc.  Split in AcdCalibSvc and AcdSimCalibSvc.  Use new calibration managers w/ templated code in CalibData/ CalibSvc.  Add activeDistance calculation to AcdTileDim so that same function gets used in sim and in recon
-    *
-------------------------------------------------------------
-User: echarles  Tue Oct  9 11:37:21 PDT 2007
-AcdUtil/AcdUtil
-
-Modified Files:
-	AcdTileDim.h IAcdCalibSvc.h 
-Added Files:
-	AcdCalib.h AcdCalibFuncs.h 
-Log Message:
-Rework AcdCalibSvc.  Split in AcdCalibSvc and AcdSimCalibSvc.  Use new calibration managers w/ templated code in CalibData/ CalibSvc.  Add activeDistance calculation to AcdTileDim so that same function gets used in sim and in recon
-    *
-------------------------------------------------------------
 User: echarles  Mon Sep 24 11:29:38 PDT 2007
 AcdUtil/src
 
