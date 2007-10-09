@@ -1,8 +1,8 @@
 package AcdUtil
-version v1r11
+version v2
 author Heather Kelly <heather@slac.stanford.edu>
 author Eric Charles <echarles@slac.stanford.edu>
-# $Id: requirements,v 1.42 2007/09/14 01:22:18 heather Exp $
+# $Id: requirements,v 1.43 2007/09/22 02:15:46 echarles Exp $
 
 use GlastSvc v*
 use Event v*
@@ -28,13 +28,14 @@ private
 
 #apply_pattern use_CalibData_symbols
 
-library AcdUtilCommon -no_share AcdTileDim.cxx AcdRibbonDim.cxx AcdTileFuncs.cxx AcdFrameUtil.cxx
+library AcdUtilCommon -no_share AcdTileDim.cxx AcdRibbonDim.cxx AcdTileFuncs.cxx AcdFrameUtil.cxx AcdCalibFuncs.cxx 
 
 
 apply_pattern package_headers
 
 library AcdUtil AcdGeometrySvc.cxx AcdDetectorList.cxx RayDoca.cxx \
-	        AcdCalibMgr.cxx AcdCalibSvc.cxx \
+	        AcdCalib.cxx AcdCalibMgr.cxx AcdCalibSvcBase.cxx AcdCalibSvc.cxx  AcdSimCalibSvc.cxx \
+	        IAcdCalibSvc.cxx \
                 Dll/*.cxx \
                 test/*.cxx \
                 ${AcdUtil_headers}               
