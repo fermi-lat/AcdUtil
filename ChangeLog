@@ -1,4 +1,22 @@
 ------------------------------------------------------------
+User: echarles  Tue Oct  9 11:37:22 PDT 2007
+AcdUtil/src
+
+Modified Files:
+	AcdCalibMgr.cxx AcdCalibMgr.h AcdCalibSvc.cxx AcdCalibSvc.h 
+	AcdTileDim.cxx 
+Added Files:
+	AcdCalib.cxx AcdCalibFuncs.cxx AcdCalibSvcBase.cxx 
+	AcdCalibSvcBase.h AcdSimCalibSvc.cxx AcdSimCalibSvc.h 
+	IAcdCalibSvc.cxx 
+Removed Files:
+	AcdCnoCalibMgr.h AcdCoherentNoiseCalibMgr.h AcdGainCalibMgr.h 
+	AcdHighRangeCalibMgr.h AcdPedCalibMgr.h AcdRangeCalibMgr.h 
+	AcdVetoCalibMgr.h 
+Log Message:
+Rework AcdCalibSvc.  Split in AcdCalibSvc and AcdSimCalibSvc.  Use new calibration managers w/ templated code in CalibData/ CalibSvc.  Add activeDistance calculation to AcdTileDim so that same function gets used in sim and in recon
+    *
+------------------------------------------------------------
 User: echarles  Tue Oct  9 11:37:21 PDT 2007
 AcdUtil/doc
 
