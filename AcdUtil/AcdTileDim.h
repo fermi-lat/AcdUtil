@@ -22,7 +22,7 @@
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdTileDim.h,v 1.5 2007/07/02 19:21:33 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdTileDim.h,v 1.6 2007/08/22 23:25:08 echarles Exp $
 */
 
 class AcdTileDim {
@@ -92,6 +92,8 @@ public:
   }
 
   void toLocal(const HepPoint3D& global, HepPoint3D& local, int idx = 0) const;
+
+  void activeDistance(const HepPoint3D& localPoint, int iVol, double& activeX, double& activeY) const;
 
   const HepTransform3D& transform(int iVol) const {
     return m_transform[iVol];

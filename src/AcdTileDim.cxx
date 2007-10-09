@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.7 2007/08/22 23:25:09 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.8 2007/08/24 22:17:52 echarles Exp $
 //
 //  Implementation file of AcdTileDim 
 //  
@@ -59,6 +59,37 @@ StatusCode AcdTileDim::toLocalCoords(const AcdTileDim& /* dim */,
 				     double& localX, double& localY){
   localX = localY = 0.;
   return StatusCode::SUCCESS;
+}
+
+void AcdTileDim::activeDistance(const HepPoint3D& localPoint, int iVol, double& activeX, double& activeY) const {
+
+  
+  activeX = (dim(iVol)[0]/2.) - fabs(localPoint.x());
+  activeY = (dim(iVol)[1]/2.) - fabs(localPoint.y());
+
+  if ( nVol() == 2 ) {
+    int face = acdId().face();
+    if ( face == 0 ) {
+      // top, check for hitting near bent tile
+      if ( iVol == 0 ) {
+	if ( sharedEdge(0) == 1 &&  localPoint.x() > 0 ) {
+	  activeY += fabs(sharedWidth(0));
+	} else if (  sharedEdge(0) == 3 &&  localPoint.y() <  0 ) {
+	  activeY += fabs(sharedWidth(0));
+	}  
+      } else if ( iVol == 1 ) {
+	if ( sharedEdge(1) == 1 && localPoint.y() > 0 ) {
+	  // is a shared piece.  but this is a short side, so take the distance to the
+	  // other side of this volume
+	  activeY =  dim(iVol)[1] - activeY;
+	} else if ( sharedEdge(1) == 3 && localPoint.y() < 0 ) {
+	  // is a shared piece.  but this is a short side, so take the distance to the
+	  // other side of this volume
+	  activeY =  dim(iVol)[1] - activeY;
+	}
+      } 
+    }
+  }
 }
 
 void AcdTileDim::toLocal(const HepPoint3D& global, HepPoint3D& local, int idx) const {
