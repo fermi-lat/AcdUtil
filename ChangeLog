@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Oct 26 12:00:21 PDT 2007
+AcdUtil/AcdUtil
+
+Modified Files:
+	AcdFrameUtil.h AcdTileDim.h 
+Log Message:
+Allow for trapezoidal tiles
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r1, operation: add
 Package: AcdUtil
