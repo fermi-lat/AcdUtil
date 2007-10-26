@@ -22,7 +22,7 @@
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdTileDim.h,v 1.6 2007/08/22 23:25:08 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdTileDim.h,v 1.7 2007/10/09 18:37:21 echarles Exp $
 */
 
 class AcdTileDim {
@@ -91,6 +91,8 @@ public:
     return m_screwHoles;
   }
 
+  double widthAtLocalY(int iVol, double localY) const;
+
   void toLocal(const HepPoint3D& global, HepPoint3D& local, int idx = 0) const;
 
   void activeDistance(const HepPoint3D& localPoint, int iVol, double& activeX, double& activeY) const;
@@ -118,6 +120,11 @@ private:
   /// The number of volumes in this tile
   int                       m_nVol;
   
+  /// Is this tile a trapezoid
+  bool                      m_trapezoid;
+  double                    m_xmean;
+  double                    m_xdiff;
+
   /// the tile dimensions
   std::vector<double>       m_dim[2];
 

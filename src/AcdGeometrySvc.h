@@ -11,7 +11,7 @@
  * 
  * @author Heather Kelly 
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.12 2007/08/24 22:17:52 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.13 2007/09/22 02:01:14 echarles Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -129,7 +129,8 @@ protected:
 					   std::vector<double>& dim,
 					   HepGeom::Transform3D& transform,
 					   HepPoint3D& center,
-					   HepVector3D& xVectorGlobal,
+					   HepVector3D& x1VectorGlobal,
+					   HepVector3D& x2VectorGlobal,
 					   HepVector3D& yVectorGlobal) const;
 			    
 
