@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: echarles  Fri Oct 26 12:00:23 PDT 2007
+AcdUtil/src
+
+Modified Files:
+	AcdFrameUtil.cxx AcdGeometrySvc.cxx AcdGeometrySvc.h 
+	AcdTileDim.cxx 
+Log Message:
+Allow for trapezoidal tiles
+    *
+------------------------------------------------------------
+User: echarles  Fri Oct 26 12:00:23 PDT 2007
 AcdUtil/doc
 
 Modified Files:
