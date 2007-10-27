@@ -11,7 +11,7 @@
  * 
  * @author Heather Kelly 
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.13 2007/09/22 02:01:14 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.14 2007/10/26 19:00:23 echarles Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -120,10 +120,6 @@ protected:
     StatusCode getDimensions(const idents::VolumeIdentifier &volIId, 
 			     std::vector<double> &dims, 
 			     HepPoint3D &xT) const;
-  
-    StatusCode getDetectorDimensions(const idents::VolumeIdentifier &volIId, 
-				     std::vector<double> &dims, 
-				     HepPoint3D &xT) const;
   
     StatusCode getTransformAndLocalVectors(const idents::VolumeIdentifier &volIId,
 					   std::vector<double>& dim,
