@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Oct 26 18:41:17 PDT 2007
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Fix a compilation problem in AcdGeometrySvc::fillRibbonData
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r2, operation: add
 Package: AcdUtil
