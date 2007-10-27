@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Fri Oct 26 18:41:17 PDT 2007
+AcdUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Fix a compilation problem in AcdGeometrySvc::fillRibbonData
+    *
+------------------------------------------------------------
+User: echarles  Fri Oct 26 18:41:17 PDT 2007
 AcdUtil/cmt
 
 Modified Files:
