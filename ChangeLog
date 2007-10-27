@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Oct 26 18:53:17 PDT 2007
+AcdUtil/src
+
+Modified Files:
+	AcdGeometrySvc.cxx AcdGeometrySvc.h 
+Log Message:
+(For Eric C.) Fix compile error; eliminate unused function
+
+    *
+------------------------------------------------------------
 User: echarles  Fri Oct 26 18:41:17 PDT 2007
 AcdUtil/src
 
