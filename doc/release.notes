@@ -3,6 +3,7 @@
  Coordinator:H.Kelly
  @verbatim
 
+ v2r0p1   28-Oct-2007 HMK Patch to include AcdSimCalibSvc in load routine
  v2       10-Oct-2007 EAC Rework AcdCalibSvc.
                           Split in AcdCalibSvc and AcdSimCalibSvc.
                           Use new calibration managers w/ templated code in CalibData/ CalibSvc
