@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Sun Oct 28 16:21:26 PDT 2007
+AcdUtil/doc
+
+Modified Files:
+      Tag: GlastReleasev13r2
+	release.notes 
+Log Message:
+patch for windows
+    *
+------------------------------------------------------------
+User: heather  Sun Oct 28 16:21:26 PDT 2007
 AcdUtil/cmt
 
 Modified Files:
