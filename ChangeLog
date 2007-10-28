@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Sun Oct 28 16:21:27 PDT 2007
+AcdUtil/src/Dll
+
+Modified Files:
+      Tag: GlastReleasev13r2
+	AcdUtil_load.cxx 
+Log Message:
+patch for windows
+    *
+------------------------------------------------------------
 User: heather  Sun Oct 28 16:21:26 PDT 2007
 AcdUtil/doc
 
