@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Sun Oct 28 16:21:26 PDT 2007
+AcdUtil/cmt
+
+Modified Files:
+      Tag: GlastReleasev13r2
+	requirements 
+Log Message:
+patch for windows
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r2p2, operation: add
 Package: AcdUtil
