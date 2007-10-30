@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Oct 29 19:45:39 PDT 2007
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+prepare for gr_app
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r2p3, operation: add
 Package: AcdUtil
