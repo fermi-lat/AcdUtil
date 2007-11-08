@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Thu Nov  8 12:08:28 PST 2007
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+added access to transfrom for each side of ribbons
+    *
+------------------------------------------------------------
+User: echarles  Thu Nov  8 12:08:28 PST 2007
 AcdUtil/AcdUtil
 
 Modified Files:
