@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu Nov  8 12:08:28 PST 2007
+AcdUtil/AcdUtil
+
+Modified Files:
+	AcdRibbonDim.h 
+Log Message:
+added access to transfrom for each side of ribbons
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r3, operation: add
 Package: AcdUtil
