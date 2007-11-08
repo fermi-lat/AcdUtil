@@ -20,7 +20,7 @@
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdRibbonDim.h,v 1.5 2007/07/14 00:51:09 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdRibbonDim.h,v 1.6 2007/07/30 18:56:57 echarles Exp $
 */
 
 class AcdRibbonDim {
@@ -57,6 +57,8 @@ public:
   bool setEdgeRay(int iSeg, HepPoint3D& start, HepVector3D& vector) const;
 
   void toLocal(const HepPoint3D& global, int segment, HepPoint3D& local) const;
+
+  const HepTransform3D& transform(int iVol) const;
 
 protected:
 

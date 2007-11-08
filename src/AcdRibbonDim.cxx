@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdRibbonDim.cxx,v 1.8 2007/07/30 18:56:58 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdRibbonDim.cxx,v 1.9 2007/09/22 02:01:14 echarles Exp $
 //
 //  Implementation file of AcdRibbonDim 
 //  
@@ -90,6 +90,19 @@ bool AcdRibbonDim::setEdgeRay(int iSeg, HepPoint3D& start, HepVector3D& vector) 
     break;    
   }
   return true;
+}
+
+const HepTransform3D& AcdRibbonDim::transform(int iVol) const {
+  switch ( iVol ) {
+  case 0:
+    return m_minusSideTransform;
+  case 1:
+    return m_topTransform;
+  case 2:
+    return m_plusSideTransform;
+  }
+  static const HepTransform3D nullTrans;
+  return nullTrans;
 }
 
 
