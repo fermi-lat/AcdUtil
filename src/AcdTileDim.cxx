@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.9 2007/10/09 18:37:22 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.10 2007/10/26 19:00:23 echarles Exp $
 //
 //  Implementation file of AcdTileDim 
 //  
@@ -93,7 +93,7 @@ void AcdTileDim::activeDistance(const HepPoint3D& localPoint, int iVol, double& 
     if ( face == 0 ) {
       // top, check for hitting near bent tile
       if ( iVol == 0 ) {
-	if ( sharedEdge(0) == 1 &&  localPoint.x() > 0 ) {
+	if ( sharedEdge(0) == 1 &&  localPoint.y() > 0 ) {
 	  activeY += fabs(sharedWidth(0));
 	} else if (  sharedEdge(0) == 3 &&  localPoint.y() <  0 ) {
 	  activeY += fabs(sharedWidth(0));
