@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Nov  9 11:13:29 PST 2007
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+added debugging printout and fixed but in tile active distance
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r4, operation: add
 Package: AcdUtil
