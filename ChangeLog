@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Nov  9 12:25:44 PST 2007
+AcdUtil/src
+
+Modified Files:
+	AcdCalibFuncs.cxx 
+Log Message:
+fix bug in handling saturated values in high range readout
+    *
+------------------------------------------------------------
 User: echarles  Fri Nov  9 12:25:43 PST 2007
 AcdUtil/doc
 
