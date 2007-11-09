@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Nov  9 12:25:43 PST 2007
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix bug in handling saturated values in high range readout
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r4p1, operation: add
 Package: AcdUtil
