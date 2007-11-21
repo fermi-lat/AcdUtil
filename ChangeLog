@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Wed Nov 21 14:25:13 PST 2007
+AcdUtil/src
+
+Modified Files:
+	AcdGeometrySvc.cxx 
+Log Message:
+Fix AcdGeometrySvc::getTransformAndLocalVectors
+    *
+------------------------------------------------------------
+User: echarles  Wed Nov 21 14:25:13 PST 2007
 AcdUtil/doc
 
 Modified Files:
