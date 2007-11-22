@@ -1,8 +1,8 @@
 package AcdUtil
-version v2r5p1
+version v2r6
 author Heather Kelly <heather@slac.stanford.edu>
 author Eric Charles <echarles@slac.stanford.edu>
-# $Id: requirements,v 1.56 2007/11/21 19:31:42 echarles Exp $
+# $Id: requirements,v 1.57 2007/11/21 22:25:12 echarles Exp $
 
 use GlastSvc v*
 use Event v*
