@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Nov 23 19:48:50 PST 2007
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Fix tile edges in AcdGeometeySvc
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r6p1, operation: add
 Package: AcdUtil
