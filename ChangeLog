@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Fri Nov 23 19:48:51 PST 2007
+AcdUtil/src
+
+Modified Files:
+	AcdGeometrySvc.cxx 
+Log Message:
+Fix tile edges in AcdGeometeySvc
+    *
+------------------------------------------------------------
+User: echarles  Fri Nov 23 19:48:51 PST 2007
 AcdUtil/doc
 
 Modified Files:
