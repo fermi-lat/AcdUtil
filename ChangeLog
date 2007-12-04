@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Dec  4 08:46:44 PST 2007
+AcdUtil/src
+
+Modified Files:
+	AcdCalib.cxx 
+Log Message:
+reorganize the ideal object to be static
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r6p2, operation: add
 Package: AcdUtil
