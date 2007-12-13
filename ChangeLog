@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Wed Dec 12 18:02:01 PST 2007
+AcdUtil/AcdUtil
+
+Added Files:
+	AcdCalib_override_mc.txt AcdCalib_recon_data.txt 
+	AcdCalib_recon_mc.txt AcdCalib_sim.txt 
+Log Message:
+added sample job options files for calibrations
+    *
+------------------------------------------------------------
 User: burnett  Tue Dec  4 08:46:44 PST 2007
 AcdUtil/src
 
