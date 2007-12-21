@@ -1,6 +1,6 @@
 #ifndef AcdCalibMgr_H
 #define AcdCalibMgr_H
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdCalibMgr.h,v 1.3 2007/09/12 13:17:04 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdCalibMgr.h,v 1.4 2007/10/09 18:37:21 echarles Exp $
 
 // LOCAL
 #include "AcdUtil/AcdCalib.h"
@@ -115,6 +115,7 @@ public:
     AcdCalibMgr( AcdCalib::calibItem( T::calibType() ) ){;}
 
   virtual ~AcdCalibMgrTmpl(){;}
+
 
   /// Get a calibration
   StatusCode getCalibration(idents::AcdId id, unsigned pmt, CalibObjType*& calib) {

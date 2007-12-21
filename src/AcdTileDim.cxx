@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.10 2007/10/26 19:00:23 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.11 2007/11/09 19:13:30 echarles Exp $
 //
 //  Implementation file of AcdTileDim 
 //  
@@ -94,19 +94,25 @@ void AcdTileDim::activeDistance(const HepPoint3D& localPoint, int iVol, double& 
       // top, check for hitting near bent tile
       if ( iVol == 0 ) {
 	if ( sharedEdge(0) == 1 &&  localPoint.y() > 0 ) {
+	  // hit +Y side of TOP tile near +Y edge,
+	  // add the extra size of the bent piece
 	  activeY += fabs(sharedWidth(0));
 	} else if (  sharedEdge(0) == 3 &&  localPoint.y() <  0 ) {
+	  // hit -Y side of TOP tile near -Y edge,
+	  // add the extra size of the bent piece
 	  activeY += fabs(sharedWidth(0));
 	}  
       } else if ( iVol == 1 ) {
 	if ( sharedEdge(1) == 1 && localPoint.y() > 0 ) {
+	  // hit upper part of BENT piece on -Y side ( local Y goes UP ) 
 	  // is a shared piece.  but this is a short side, so take the distance to the
 	  // other side of this volume
-	  activeY =  dim(iVol)[1] - activeY;
+	  activeY = (dim(iVol)[1]/2.) + localPoint.y();
 	} else if ( sharedEdge(1) == 3 && localPoint.y() < 0 ) {
+	  // hit upper part of BENT piece on +Y side ( local Y goes DOWN )
 	  // is a shared piece.  but this is a short side, so take the distance to the
 	  // other side of this volume
-	  activeY =  dim(iVol)[1] - activeY;
+	  activeY = (dim(iVol)[1]/2.) - localPoint.y();
 	}
       } 
     }
