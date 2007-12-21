@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu Dec 20 23:49:05 PST 2007
+AcdUtil/src
+
+Modified Files:
+	AcdCalibMgr.h AcdGeometrySvc.cxx AcdTileDim.cxx 
+Log Message:
+fix bent tiles active dist calc
+    *
+------------------------------------------------------------
 User: echarles  Wed Dec 12 18:02:01 PST 2007
 AcdUtil/AcdUtil
 
