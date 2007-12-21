@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu Dec 20 23:55:57 PST 2007
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Fix bent tile active distance calc
+    *
+------------------------------------------------------------
 User: echarles  Thu Dec 20 23:49:05 PST 2007
 AcdUtil/src
 
