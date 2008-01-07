@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.11 2007/11/09 19:13:30 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.12 2007/12/21 07:49:05 echarles Exp $
 //
 //  Implementation file of AcdTileDim 
 //  
@@ -103,6 +103,9 @@ void AcdTileDim::activeDistance(const HepPoint3D& localPoint, int iVol, double& 
 	  activeY += fabs(sharedWidth(0));
 	}  
       } else if ( iVol == 1 ) {
+	// first make sure that it actually hit the tile piece
+	if ( activeY < 0. ) return; 
+	// Ok, it hit the tile.  Correct for the fact that it bends around
 	if ( sharedEdge(1) == 1 && localPoint.y() > 0 ) {
 	  // hit upper part of BENT piece on -Y side ( local Y goes UP ) 
 	  // is a shared piece.  but this is a short side, so take the distance to the
