@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Jan  7 11:01:07 PST 2008
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Clarify active distance for top half of bent tiles
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r6p3, operation: add
 Package: AcdUtil
