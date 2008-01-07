@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Mon Jan  7 11:01:07 PST 2008
+AcdUtil/src
+
+Modified Files:
+	AcdTileDim.cxx 
+Log Message:
+Clarify active distance for top half of bent tiles
+    *
+------------------------------------------------------------
+User: echarles  Mon Jan  7 11:01:07 PST 2008
 AcdUtil/doc
 
 Modified Files:
