@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Tue Jan  8 11:34:03 PST 2008
+AcdUtil/src
+
+Modified Files:
+	AcdTileDim.cxx 
+Log Message:
+Make sure that tile was hit before applying bent tile correction
+    *
+------------------------------------------------------------
+User: echarles  Tue Jan  8 11:34:03 PST 2008
 AcdUtil/doc
 
 Modified Files:
