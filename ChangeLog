@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Jan  8 11:34:03 PST 2008
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Make sure that tile was hit before applying bent tile correction
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r6p4, operation: add
 Package: AcdUtil
