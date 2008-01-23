@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: echarles  Wed Jan 23 15:42:18 PST 2008
+AcdUtil/AcdUtil
+
+Modified Files:
+	AcdCalib.h AcdCalibFuncs.h AcdFrameUtil.h AcdGeomMap.h 
+	AcdRibbonDim.h AcdTileDim.h AcdTileFuncs.h IAcdCalibSvc.h 
+	IAcdGeometrySvc.h RayDoca.h 
+Log Message:
+update comments for acd review
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r6p5, operation: add
 Package: AcdUtil
