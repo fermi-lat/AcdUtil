@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: echarles  Wed Jan 23 15:42:18 PST 2008
+AcdUtil/src
+
+Modified Files:
+	AcdCalibFuncs.cxx AcdCalibMgr.h AcdCalibSvc.h AcdFrameUtil.cxx 
+	AcdGeometrySvc.h AcdSimCalibSvc.h RayDoca.cxx mainpage.h 
+Log Message:
+update comments for acd review
+    *
+------------------------------------------------------------
+User: echarles  Wed Jan 23 15:42:18 PST 2008
 AcdUtil/AcdUtil
 
 Modified Files:
