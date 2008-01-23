@@ -1,6 +1,6 @@
 #ifndef AcdCalibMgr_H
 #define AcdCalibMgr_H
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdCalibMgr.h,v 1.4 2007/10/09 18:37:21 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdCalibMgr.h,v 1.5 2007/12/21 07:49:05 echarles Exp $
 
 // LOCAL
 #include "AcdUtil/AcdCalib.h"
@@ -44,8 +44,10 @@ public:
   
   virtual ~AcdCalibMgr() {};
 
+  /// return the type of calibration handled by this manager
   virtual AcdCalibData::CALTYPE calibType() const = 0;
   
+  /// initialize and register this manager
   StatusCode initialize(const std::string &flavor,
 			AcdCalibSvcBase &acs);
 
@@ -69,10 +71,12 @@ protected:
     return StatusCode::SUCCESS;
   }
 
+  /// return the calibration
   inline CalibData::AcdCalibBase* calibBase() {
     return m_calibBase;
   }
 
+  /// are we just returning the ideal calibration instead of using the DB
   inline bool ideal() const {
     return m_ideal;
   }
@@ -102,20 +106,28 @@ protected:
 
 };
 
+/** @class AcdCalibMgrTmpl
+    @author Eric Charles 
+    \brief template for handling specific calibration type
+
+*/
+
 template <class T>
 class AcdCalibMgrTmpl : public AcdCalibMgr {
   
 public:
 
-  // the Type of object managed by this calibration manager
+  /// the Type of object managed by this calibration manager
   typedef typename T::ObjType CalibObjType;
   
 public:
+
+  /// Standard c'tor just specifies which calibration type
   AcdCalibMgrTmpl():
     AcdCalibMgr( AcdCalib::calibItem( T::calibType() ) ){;}
 
+  /// D'tor is a no-op
   virtual ~AcdCalibMgrTmpl(){;}
-
 
   /// Get a calibration
   StatusCode getCalibration(idents::AcdId id, unsigned pmt, CalibObjType*& calib) {
@@ -144,6 +156,7 @@ public:
     return StatusCode::SUCCESS;	
   }
   
+  /// use typename to return the calibration type
   virtual AcdCalibData::CALTYPE calibType() const {
     return T::calibType();
   }
