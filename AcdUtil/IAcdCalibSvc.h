@@ -1,6 +1,6 @@
 #ifndef IAcdCalibSvc_H
 #define IAcdCalibSvc_H
-//  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdCalibSvc.h,v 1.1 2006/04/12 18:15:38 echarles Exp $
+//  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdCalibSvc.h,v 1.2 2007/10/09 18:37:21 echarles Exp $
 
 // LOCAL INCLUDES
 #include "AcdUtil/AcdCalib.h"
@@ -32,12 +32,25 @@ class AcdCalibMgr;
 // minor version)
 static const InterfaceID IID_IAcdCalibSvc("IAcdCalibSvc", 2, 0);
 
-/*! @class IAcdCalibSvc
- * \brief Abstract interface for provision of GLAST LAT ACD calibration constants
- * \author Eric Charles (from Zach Fewtrell's CalCalibSvc)
+/** 
+ * @class AcdUtil::IAcdCalibSvc
+ * 
+ * @brief Abstract interface for provision of GLAST LAT ACD calibration constants
  *
- * \note functions are provided for each calibration type.  
- *       calib objects are passed back by reference to pointer
+ * Functions are provided to access every type of ACD calibration 
+ * by Channel and PMT:
+ *   - CalibData::AcdPed           Pedestal (in PHA counts)
+ *   - CalibData::AcdGain          Gain (aka MIP peak in PHA above pedestal)
+ *   - CalibData::AcdVeto          Veto threshold (in PHA counts)
+ *   - CalibData::AcdCno           CNO threshold (in PHA counts)
+ *   - CalibData::AcdRange         Range crossover (in PHA counts)
+ *   - CalibData::AcdHighRange     High-Range PHA -> MIPs calibration (pedestal, slope, saturation)
+ *   - CalibData::AcdCoherentNoise Coherent Noise effect ( [0] * exp([1]*x) * sin( [2]*x + [3] )
+ *   
+ * All functions return Success or Failure and fill the provided parameter.
+ * Type checking is included.
+ *
+ * @author Eric Charles (from Zach Fewtrell's CalCalibSvc)
  *
  */
 

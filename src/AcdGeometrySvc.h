@@ -7,11 +7,12 @@
  *
  * @brief Supplies the geometry constants and calculations for ACD 
  *
- * The constants all flow from GlastDetSvc.
+ * The constants all flow from GlastDetSvc.  Description of the data providid is given in 
+ * IAcdGeometrySvc.
  * 
  * @author Heather Kelly 
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.14 2007/10/26 19:00:23 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.15 2007/10/27 01:53:17 jrb Exp $
  */
 
 #include "GaudiKernel/Service.h"
