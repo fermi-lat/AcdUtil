@@ -1,6 +1,6 @@
 #ifndef AcdSimCalibSvc_H
 #define AcdSimCalibSvc_H
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdSimCalibSvc.h,v 1.1 2007/10/09 18:37:22 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdSimCalibSvc.h,v 1.2 2008/01/23 23:42:18 echarles Exp $
 
 // LOCAL 
 #include "AcdCalibMgr.h"
@@ -41,6 +41,7 @@
  * - FlavorRange         [""]             To override range crossover flavor.
  * - FlavorHighRange     [""]             To override high range calibration flavor.
  * - FlavorCoherentNoise [""]             To override coherent noise calibration flavor.
+ * - FlavorRibbon        [""]             To override ribbon calibration flavor.
  *
  * \author  Eric Charles (from Zachary Fewtrell's CalCalib stuff)
  *
