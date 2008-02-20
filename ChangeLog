@@ -1,20 +1,4 @@
 ------------------------------------------------------------
-User: echarles  Tue Feb 19 20:57:32 PST 2008
-AcdUtil/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-    *
-------------------------------------------------------------
-User: echarles  Tue Feb 19 20:57:32 PST 2008
-AcdUtil/AcdUtil
-
-Modified Files:
-	AcdCalib_override_mc.txt AcdCalib_sim.txt 
-Log Message:
-    *
-------------------------------------------------------------
 TAG
 Tag name: v2r7, operation: add
 Package: AcdUtil
