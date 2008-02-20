@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Feb 19 20:46:56 PST 2008
+AcdUtil/AcdUtil
+
+Modified Files:
+	IAcdCalibSvc.h 
+Log Message:
+few fixes for ribbon attenuation code
+    *
+------------------------------------------------------------
 User: echarles  Tue Feb 19 16:09:25 PST 2008
 AcdUtil/src
 
