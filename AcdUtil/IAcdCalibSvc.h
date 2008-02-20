@@ -1,6 +1,6 @@
 #ifndef IAcdCalibSvc_H
 #define IAcdCalibSvc_H
-//  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdCalibSvc.h,v 1.2 2007/10/09 18:37:21 echarles Exp $
+//  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdCalibSvc.h,v 1.3 2008/01/23 23:42:18 echarles Exp $
 
 // LOCAL INCLUDES
 #include "AcdUtil/AcdCalib.h"
@@ -23,6 +23,7 @@ namespace CalibData {
   class AcdRange;
   class AcdHighRange;
   class AcdCoherentNoise;
+  class AcdRibbon;
 }
 
 class AcdCalibMgr;
@@ -46,6 +47,7 @@ static const InterfaceID IID_IAcdCalibSvc("IAcdCalibSvc", 2, 0);
  *   - CalibData::AcdRange         Range crossover (in PHA counts)
  *   - CalibData::AcdHighRange     High-Range PHA -> MIPs calibration (pedestal, slope, saturation)
  *   - CalibData::AcdCoherentNoise Coherent Noise effect ( [0] * exp([1]*x) * sin( [2]*x + [3] )
+ *   - CalibData::AcdRibbon        Ribbon light attenuation
  *   
  * All functions return Success or Failure and fill the provided parameter.
  * Type checking is included.
@@ -125,6 +127,13 @@ namespace AcdUtil {
     virtual StatusCode getCoherentNoise(idents::AcdId id, unsigned pmt,
 					CalibData::AcdCoherentNoise*& noiseCalib);
 
+    /** \brief get ribbon calibration for a given channel
+	\param id  the tile or ribbon id
+	\param pmt A(0) or B(1) pmt
+	\param calib a pointer to the relevent high range data
+    */
+    virtual StatusCode getRibbon(idents::AcdId id, unsigned pmt,
+				 CalibData::AcdRibbon*& ribbon);
   };
 };
 
