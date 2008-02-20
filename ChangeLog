@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Feb 19 16:09:25 PST 2008
+AcdUtil/src
+
+Modified Files:
+	AcdCalib.cxx AcdSimCalibSvc.cxx AcdSimCalibSvc.h 
+Log Message:
+added AcdRibbon calibration
+    *
+------------------------------------------------------------
 User: echarles  Tue Feb 19 16:09:15 PST 2008
 AcdUtil/src
 
