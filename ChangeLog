@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Feb 19 16:09:13 PST 2008
+AcdUtil/AcdUtil
+
+Modified Files:
+	AcdRibbonDim.h IAcdGeometrySvc.h 
+Log Message:
+added functions for AcdRibbon calibration to Geom tools
+    *
+------------------------------------------------------------
 User: echarles  Wed Jan 23 15:42:18 PST 2008
 AcdUtil/src
 
