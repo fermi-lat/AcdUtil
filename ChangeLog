@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed May  7 11:06:46 PDT 2008
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch for win
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-02-07-01, operation: add
 Package: AcdUtil
