@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Wed May  7 17:07:23 PDT 2008
+AcdUtil/AcdUtil
+
+Modified Files:
+	AcdCalibFuncs.h 
+Log Message:
+Added function to apply coherent noise to pedestal, used both in sim and recon
+    *
+------------------------------------------------------------
+User: echarles  Wed May  7 17:07:23 PDT 2008
 AcdUtil/src
 
 Modified Files:
