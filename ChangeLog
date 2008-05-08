@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu May  8 13:52:27 PDT 2008
+AcdUtil/src
+
+Modified Files:
+	AcdCalib.cxx 
+Log Message:
+Added version of coherent noise calibrations for testing
+    *
+------------------------------------------------------------
 User: echarles  Wed May  7 17:07:23 PDT 2008
 AcdUtil/AcdUtil
 
