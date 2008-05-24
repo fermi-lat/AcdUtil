@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Fri May 23 17:31:01 PDT 2008
+AcdUtil/src
+
+Modified Files:
+	AcdGeometrySvc.cxx AcdGeometrySvc.h 
+Log Message:
+added ACD alignment code
+    *
+------------------------------------------------------------
+User: echarles  Fri May 23 17:31:01 PDT 2008
 AcdUtil/AcdUtil
 
 Modified Files:
