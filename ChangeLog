@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri May 23 17:31:01 PDT 2008
+AcdUtil/AcdUtil
+
+Modified Files:
+	AcdGeomMap.h 
+Log Message:
+added ACD alignment code
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-02-07-03, operation: add
 Package: AcdUtil
