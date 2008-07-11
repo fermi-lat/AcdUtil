@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Thu Jul 10 18:08:38 PDT 2008
+GlastRelease-scons/AcdUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+Small bug introduced to linux when windows was fixed
+    *
+------------------------------------------------------------
 User: glast  Thu Jul 10 17:32:27 PDT 2008
 GlastRelease-scons/AcdUtil
 
