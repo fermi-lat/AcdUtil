@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glast  Thu Jul 10 17:32:27 PDT 2008
+GlastRelease-scons/AcdUtil
+
+Modified Files:
+	AcdUtilLib.py SConscript 
+Log Message:
+Changes to allow GR packages to build on windows
+    *
+------------------------------------------------------------
 User: glastrm  Wed Jul  9 14:13:40 PDT 2008
 GlastRelease-scons/AcdUtil
 
