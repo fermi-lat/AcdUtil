@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdUtil/SConscript,v 1.1 2008/07/09 21:13:40 glastrm Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdUtil/SConscript,v 1.2 2008/07/11 00:32:26 glast Exp $
 # Authors: Heather Kelly <heather@slac.stanford.edu>, Eric Charles <echarles@slac.stanford.edu>
 # Version: AcdUtil-02-08-00
 Import('baseEnv')
@@ -9,7 +9,7 @@ progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 
 libEnv.Tool('AcdUtilLib', depsOnly = 1)
-testAcdUtilObj = libEnv.Object('src/test/TestAcdUtil.cxx')
+testAcdUtilObj = libEnv.SharedObject('src/test/TestAcdUtil.cxx')
 AcdUtilCommon = libEnv.StaticLibrary('AcdUtilCommon', ['src/AcdTileDim.cxx', 'src/AcdRibbonDim.cxx',
                                                       'src/AcdTileFuncs.cxx', 'src/AcdFrameUtil.cxx',
                                                       'src/AcdCalibFuncs.cxx', 'src/RayDoca.cxx'])
