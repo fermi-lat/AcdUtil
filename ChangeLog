@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Jul 14 18:35:35 PDT 2008
+AcdUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Tag Protect High range calibartion against rogue values
+    *
+------------------------------------------------------------
 User: glastrm  Thu Jul 10 18:08:38 PDT 2008
 GlastRelease-scons/AcdUtil
 
