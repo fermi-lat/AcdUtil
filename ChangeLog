@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Mon Jul 14 18:38:06 PDT 2008
+AcdUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tag v2r8p2 Added normalization term to AcdRibbon calibration
+    *
+------------------------------------------------------------
+User: echarles  Mon Jul 14 18:38:06 PDT 2008
 AcdUtil/cmt
 
 Modified Files:
