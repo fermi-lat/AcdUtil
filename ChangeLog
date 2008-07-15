@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Jul 14 18:38:06 PDT 2008
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tag v2r8p2 Added normalization term to AcdRibbon calibration
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r8p1, operation: add
 Package: AcdUtil
