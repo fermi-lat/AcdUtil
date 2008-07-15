@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Jul 14 18:35:36 PDT 2008
+AcdUtil/src
+
+Modified Files:
+	AcdCalibFuncs.cxx 
+Log Message:
+Tag Protect High range calibartion against rogue values
+    *
+------------------------------------------------------------
 User: echarles  Mon Jul 14 18:35:35 PDT 2008
 AcdUtil/cmt
 
