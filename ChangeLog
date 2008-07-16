@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Jul 15 18:06:50 PDT 2008
+AcdUtil/src
+
+Modified Files:
+	AcdCalibFuncs.cxx 
+Log Message:
+fix AcdCalibFuncs::coherentNoise to use time relative to zero, not 529 ticks
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-02-08-02, operation: add
 Package: AcdUtil
