@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Jul 15 18:13:31 PDT 2008
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Fixed Coherent Noise to be relative to t=0
+    *
+------------------------------------------------------------
 TAG
 Tag name: v2r8p1gl0, operation: add
 Package: AcdUtil
