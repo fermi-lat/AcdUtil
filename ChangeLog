@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Tue Jul 15 18:13:31 PDT 2008
+AcdUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Fixed Coherent Noise to be relative to t=0
+    *
+------------------------------------------------------------
+User: echarles  Tue Jul 15 18:13:31 PDT 2008
 AcdUtil/cmt
 
 Modified Files:
