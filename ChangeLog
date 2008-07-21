@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Mon Jul 21 08:17:24 PDT 2008
+GlastRelease-scons/AcdUtil/src/test
+
+Modified Files:
+	jobOptions.txt jobOptions.txtSAVE 
+Log Message:
+Removed dependency on CMT env variables
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-02-08-03, operation: add
 Package: AcdUtil
