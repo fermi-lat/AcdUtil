@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Wed Jul 30 12:16:17 PDT 2008
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tag v2r8p5: Set Coherent Noise to be relative to t=529 ticks as that is more stable
+    *
+------------------------------------------------------------
 User: echarles  Wed Jul 30 12:13:23 PDT 2008
 AcdUtil/src
 
