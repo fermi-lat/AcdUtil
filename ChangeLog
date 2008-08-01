@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Fri Aug  1 16:29:21 PDT 2008
+AcdUtil/src
+
+Modified Files:
+	AcdFrameUtil.cxx AcdGeometrySvc.cxx 
+Log Message:
+tag v2r8p6: Flip trapezoids around, so the long end is on top
+    *
+------------------------------------------------------------
+User: echarles  Fri Aug  1 16:29:21 PDT 2008
 AcdUtil/doc
 
 Modified Files:
