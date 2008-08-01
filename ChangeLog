@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Aug  1 16:29:20 PDT 2008
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tag v2r8p6: Flip trapezoids around, so the long end is on top
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-02-08-05, operation: add
 Package: AcdUtil
