@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Fri Aug 15 14:22:38 PDT 2008
+GlastRelease-scons/AcdUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+Added SConscript files for packages
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-02-08-06, operation: add
 Package: AcdUtil
