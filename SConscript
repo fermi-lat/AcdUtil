@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/SConscript,v 1.7 2008/07/30 19:30:19 glastrm Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdUtil/SConscript,v 1.8 2008/08/01 23:30:21 glastrm Exp $
 # Authors: Heather Kelly <heather@slac.stanford.edu>, Eric Charles <echarles@slac.stanford.edu>
 # Version: AcdUtil-02-08-06
 Import('baseEnv')
@@ -18,6 +18,6 @@ AcdUtil = libEnv.SharedLibrary('AcdUtil', ['src/AcdGeometrySvc.cxx', 'src/AcdDet
                                            'src/AcdSimCalibSvc.cxx', 'src/IAcdCalibSvc.cxx'] + listFiles(['src/Dll/*.cxx']) + [testAcdUtilObj])
 
 progEnv.Tool('AcdUtilLib')
-test_AcdUtil = progEnv.GaudiProgram('test_AcdUtil', testAcdUtilObj, test = 1)
+test_AcdUtil = progEnv.GaudiProgram('test_AcdUtil',[testAcdUtilObj], test = 1)
 
 progEnv.Tool('registerObjects', package = 'AcdUtil', libraries = [AcdUtilCommon, AcdUtil], testApps = [test_AcdUtil], includes = listFiles(['AcdUtil/*.h']))
