@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdUtil/SConscript,v 1.8 2008/08/01 23:30:21 glastrm Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/SConscript,v 1.9 2008/08/15 21:22:38 ecephas Exp $
 # Authors: Heather Kelly <heather@slac.stanford.edu>, Eric Charles <echarles@slac.stanford.edu>
-# Version: AcdUtil-02-08-06
+# Version: AcdUtil-02-08-07
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
