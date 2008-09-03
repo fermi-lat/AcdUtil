@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Wed Sep  3 11:30:28 PDT 2008
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tag v2r8p7 Allow values below pedestal in mipEquilvalent_lowRange, since that does happen in data
+    *
+------------------------------------------------------------
 User: echarles  Wed Sep  3 11:28:12 PDT 2008
 AcdUtil/src
 
