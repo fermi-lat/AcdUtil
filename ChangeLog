@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Wed Sep  3 11:28:12 PDT 2008
+AcdUtil/src
+
+Modified Files:
+	AcdCalibFuncs.cxx 
+Log Message:
+allow values below pedestal in AcdCalibFuncs::mipEquivalent_lowRange
+    *
+------------------------------------------------------------
 User: ecephas  Fri Aug 15 14:22:38 PDT 2008
 GlastRelease-scons/AcdUtil
 
