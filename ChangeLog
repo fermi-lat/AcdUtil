@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu Sep  4 12:27:50 PDT 2008
+AcdUtil/src
+
+Modified Files:
+	AcdTileDim.cxx 
+Log Message:
+fix xmean and xdiff for trapezoidal tiles
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-02-08-07, operation: add
 Package: AcdUtil
