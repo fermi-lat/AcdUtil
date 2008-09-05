@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu Sep  4 17:17:44 PDT 2008
+AcdUtil/src
+
+Modified Files:
+	AcdTileDim.cxx 
+Log Message:
+fix up trapezoid active distance 2d calculation
+    *
+------------------------------------------------------------
 User: echarles  Thu Sep  4 12:27:50 PDT 2008
 AcdUtil/src
 
