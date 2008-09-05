@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Thu Sep  4 17:26:41 PDT 2008
+AcdUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tag v2r8p8:  Fix active distance 2d calculation for trapezoids
+    *
+------------------------------------------------------------
+User: echarles  Thu Sep  4 17:26:41 PDT 2008
 AcdUtil/cmt
 
 Modified Files:
