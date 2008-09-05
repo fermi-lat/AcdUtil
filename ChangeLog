@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: v2r8p8, operation: mov
+Package: AcdUtil
+User: glastrm  Thu Sep  4 17:30:24 2008
+Files:
+  AcdUtil/SConscript  1.11
+
+    *
+------------------------------------------------------------
 User: glastrm  Thu Sep  4 17:30:18 PDT 2008
 AcdUtil
 
