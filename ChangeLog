@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Sep  8 11:23:05 PDT 2008
+AcdUtil/src
+
+Modified Files:
+	AcdTileDim.cxx 
+Log Message:
+tag v2r8p9: Bug fix, change localX to localY to fix typo.
+    *
+------------------------------------------------------------
 User: echarles  Mon Sep  8 11:23:01 PDT 2008
 AcdUtil/doc
 
