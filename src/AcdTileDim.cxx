@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.15 2008/09/04 19:27:50 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdTileDim.cxx,v 1.16 2008/09/05 00:17:43 echarles Exp $
 //
 //  Implementation file of AcdTileDim 
 //  
@@ -87,7 +87,7 @@ void AcdTileDim::activeDistance(const HepPoint3D& localPoint, int iVol, double& 
 
   activeY = (dim(iVol)[1]/2.) - fabs(localPoint.y());
   if ( ! m_trapezoid ) {
-    activeX = (dim(iVol)[0]/2.) - fabs(localPoint.y());
+    activeX = (dim(iVol)[0]/2.) - fabs(localPoint.x());
   } else {
     double correctionAtLocalY = ( m_dim[0][4] * (  localPoint.y() / m_dim[iVol][1] ) ) / 2.;
     double half_width = widthAtLocalY(iVol,localPoint.y())/2.;
