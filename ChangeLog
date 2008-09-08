@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Sep  8 11:22:58 PDT 2008
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tag v2r8p9: Bug fix, change localX to localY to fix typo.
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-02-08-08, operation: add
 Package: AcdUtil
