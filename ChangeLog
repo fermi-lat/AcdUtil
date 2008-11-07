@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: ecephas  Fri Nov  7 07:53:52 PST 2008
+GlastRelease-scons/AcdUtil
+
+Modified Files:
+	AcdUtilLib.py 
+Log Message:
+Added the following libraries:
+	
+	env.Tool('EventLib')
+     	env.Tool('GlastSvcLib')
+
+    *
+------------------------------------------------------------
 User: ecephas  Fri Nov  7 07:52:45 PST 2008
 GlastRelease-scons/AcdUtil
 
