@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdUtil/SConscript,v 1.12 2008/09/08 18:30:20 glastrm Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdUtil/SConscript,v 1.13 2008/11/07 15:52:45 ecephas Exp $
 # Authors: Heather Kelly <heather@slac.stanford.edu>, Eric Charles <echarles@slac.stanford.edu>
 # Version: AcdUtil-02-08-09
 Import('baseEnv')
@@ -29,3 +29,7 @@ test_AcdUtil = progEnv.GaudiProgram('test_AcdUtil',[testAcdUtilObj], test = 1)
 
 progEnv.Tool('registerObjects', package = 'AcdUtil', libraries = [AcdUtilCommon, AcdUtil],
              testApps = [test_AcdUtil], includes = listFiles(['AcdUtil/*.h']))
+
+
+
+
