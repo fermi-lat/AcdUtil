@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Mon Dec  8 07:42:27 PST 2008
+GlastRelease-scons/AcdUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+Check in SConscript for AcdUtil v2r8p9 (for branch-tag, GlastReleasev15r49) 
+    *
+------------------------------------------------------------
 User: ecephas  Fri Nov  7 07:53:52 PST 2008
 GlastRelease-scons/AcdUtil
 
