@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: echarles  Mon Jun  8 10:14:43 PDT 2009
+AcdUtil/src
+
+Modified Files:
+      Tag: GlastReleasev17r31p1
+	AcdRibbonDim.cxx 
+Log Message:
+New Version of AcdRibbonDim.  Handles segmentation better
+    *
+------------------------------------------------------------
+User: echarles  Mon Jun  8 10:14:43 PDT 2009
 AcdUtil/AcdUtil
 
 Modified Files:
