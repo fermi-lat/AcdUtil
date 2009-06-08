@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Mon Jun  8 10:18:06 PDT 2009
+AcdUtil/src
+
+Modified Files:
+      Tag: GlastReleasev17r31p1
+	AcdGeometrySvc.h AcdGeometrySvc.cxx 
+Log Message:
+updated signature of AcdGeometrySvc::getRibbon() and added AcdGeometrySvc::getNextTileCorners() to handle gaps
+    *
+------------------------------------------------------------
 User: echarles  Mon Jun  8 10:18:05 PDT 2009
 AcdUtil/AcdUtil
 
