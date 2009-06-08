@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: echarles  Mon Jun  8 10:14:04 PDT 2009
+AcdUtil/src
+
+Modified Files:
+      Tag: GlastReleasev17r31p1
+	AcdTileDim.cxx 
+Log Message:
+New Version of AcdTileDim.  Needed to handles Gaps better
+    *
+------------------------------------------------------------
+User: echarles  Mon Jun  8 10:14:04 PDT 2009
 AcdUtil/AcdUtil
 
 Modified Files:
