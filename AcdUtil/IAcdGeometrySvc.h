@@ -1,7 +1,7 @@
 /** @file IAcdGeometrySvc.h
  @brief Abstract interface to AcdGeometrySvc (q.v.)
 
-  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdGeometrySvc.h,v 1.15 2008/02/20 00:09:12 echarles Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdGeometrySvc.h,v 1.15.294.1 2009/06/08 17:18:05 echarles Exp $
 */
 
 #ifndef __IACDGEOMETRYSVC_H
@@ -115,7 +115,7 @@ public:
     virtual StatusCode findCornerGaps() = 0;
 
     virtual StatusCode getNextTileCorners(const idents::AcdId& id, int dir, 
-					  HepPoint3D& c1, HepPoint3D& c1, bool& isRealGap) = 0;
+					  HepPoint3D& c1, HepPoint3D& c2, bool& isRealGap) = 0;
 
 
 };
