@@ -12,7 +12,7 @@
  * 
  * @author Heather Kelly 
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.17 2008/05/24 00:31:01 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.17.196.1 2009/06/08 17:18:05 echarles Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -108,7 +108,7 @@ public:
     StatusCode findCornerGaps();
 
     virtual StatusCode getNextTileCorners(const idents::AcdId& id, int dir, 
-					  HepPoint3D& c1, HepPoint3D& c1, bool& isRealGap);
+					  HepPoint3D& c1, HepPoint3D& c2, bool& isRealGap);
 
 
 protected:
