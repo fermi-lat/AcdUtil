@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Wed Jun 10 16:45:12 PDT 2009
+AcdUtil/cmt
+
+Modified Files:
+      Tag: GlastReleasev17r31p1
+	requirements 
+Log Message:
+tag v3r0p0gr3: Fix to compile more stuff on Windows
+    *
+------------------------------------------------------------
 User: echarles  Wed Jun 10 16:45:11 PDT 2009
 AcdUtil/AcdUtil
 
