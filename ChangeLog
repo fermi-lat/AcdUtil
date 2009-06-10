@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: echarles  Tue Jun  9 17:11:42 PDT 2009
+AcdUtil/src
+
+Modified Files:
+      Tag: GlastReleasev17r31p1
+	AcdGeometrySvc.h 
+Log Message:
+tag v3r0p0gr2: Fix to compile on Windows
+    *
+------------------------------------------------------------
+User: echarles  Tue Jun  9 17:11:42 PDT 2009
 AcdUtil/doc
 
 Modified Files:
