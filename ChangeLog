@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Tue Jun  9 17:11:41 PDT 2009
+AcdUtil/cmt
+
+Modified Files:
+      Tag: GlastReleasev17r31p1
+	requirements 
+Log Message:
+tag v3r0p0gr2: Fix to compile on Windows
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r0p0gr2, operation: add
 Package: AcdUtil
