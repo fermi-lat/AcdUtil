@@ -45,7 +45,7 @@ public:
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdRibbonDim.h,v 1.9.294.1 2009/06/08 17:14:41 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdRibbonDim.h,v 1.9.294.2 2009/06/12 01:43:01 echarles Exp $
 */
 
 class AcdRibbonDim {
@@ -110,7 +110,7 @@ public:
 
   /**
    **/  
-  void getSegmentsIndices(const HepVector3D& tkDir, bool upward, int& start, int& end, int& dir);
+  void getSegmentsIndices(const HepVector3D& tkDir, bool upward, int& start, int& end, int& dir) const;
 
   /**
    * @brief Get the length along the ribbon given a volId and a local point

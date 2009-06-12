@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdRibbonDim.cxx,v 1.12.294.1 2009/06/08 17:14:43 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdRibbonDim.cxx,v 1.12.294.2 2009/06/12 16:08:33 heather Exp $
 //
 //  Implementation file of AcdRibbonDim 
 //  
@@ -113,7 +113,7 @@ bool AcdRibbonDim::setEdgeRay(const int& side, HepPoint3D& start, HepVector3D& v
 }
 
 
-void AcdRibbonDim::getSegmentsIndices(const HepVector3D& tkDir, bool upward, int& start, int& end, int& dir) {
+void AcdRibbonDim::getSegmentsIndices(const HepVector3D& tkDir, bool upward, int& start, int& end, int& dir) const {
   
   switch ( m_acdId.ribbonOrientation() ) {
   case 5:
