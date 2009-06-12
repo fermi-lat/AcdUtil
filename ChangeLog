@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Thu Jun 11 18:43:01 PDT 2009
+AcdUtil/AcdUtil
+
+Modified Files:
+      Tag: GlastReleasev17r31p1
+	AcdRibbonDim.h 
+Log Message:
+tag v3r0p0gr4: Fix to compile more even more stuff on Windows
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r0p0gr3, operation: add
 Package: AcdUtil
