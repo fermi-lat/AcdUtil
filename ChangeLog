@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Fri Jun 12 09:51:34 PDT 2009
+AcdUtil/src
+
+Modified Files:
+      Tag: GlastReleasev17r31p1
+	AcdRibbonDim.cxx 
+Log Message:
+const correctness
+    *
+------------------------------------------------------------
+User: heather  Fri Jun 12 09:51:34 PDT 2009
 AcdUtil/doc
 
 Modified Files:
