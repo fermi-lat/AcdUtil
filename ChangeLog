@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Fri Jun 12 09:51:33 PDT 2009
+AcdUtil/AcdUtil
+
+Modified Files:
+      Tag: GlastReleasev17r31p1
+	AcdRibbonDim.h 
+Log Message:
+const correctness
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r0p0gr5, operation: add
 Package: AcdUtil
