@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdRibbonDim.cxx,v 1.12 2008/02/20 04:46:58 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdRibbonDim.cxx,v 1.12.294.1 2009/06/08 17:14:43 echarles Exp $
 //
 //  Implementation file of AcdRibbonDim 
 //  
@@ -105,7 +105,7 @@ bool AcdRibbonDim::setEdgeRay(const int& side, HepPoint3D& start, HepVector3D& v
     start = m_segments[m_plusIdx]->m_start;
     end = m_segments.back()->m_end;
     break;
-  defualt:
+  default:
     return false;
   }
   vect = end - start;
