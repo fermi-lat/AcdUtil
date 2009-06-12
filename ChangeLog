@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Fri Jun 12 09:08:32 PDT 2009
+AcdUtil/cmt
+
+Modified Files:
+      Tag: GlastReleasev17r31p1
+	requirements 
+Log Message:
+fix typo
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r0p0gr4, operation: add
 Package: AcdUtil
