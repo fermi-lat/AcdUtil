@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Mon Jun 15 13:44:16 PDT 2009
+AcdUtil/doc
+
+Modified Files:
+      Tag: GlastReleasev17r31p1
+	release.notes 
+Log Message:
+tag v3r0p0gr7: re-added utiltiy functions to AcdTileDim for overlay
+    *
+------------------------------------------------------------
 User: echarles  Mon Jun 15 13:44:14 PDT 2009
 AcdUtil/cmt
 
