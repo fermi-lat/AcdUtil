@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Mon Jun 15 13:44:14 PDT 2009
+AcdUtil/cmt
+
+Modified Files:
+      Tag: GlastReleasev17r31p1
+	requirements 
+Log Message:
+tag v3r0p0gr7: re-added utiltiy functions to AcdTileDim for overlay
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r0p0gr6, operation: add
 Package: AcdUtil
