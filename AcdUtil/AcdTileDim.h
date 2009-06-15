@@ -37,7 +37,7 @@
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdTileDim.h,v 1.9 2008/01/23 23:42:18 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdTileDim.h,v 1.9.294.1 2009/06/08 17:14:03 echarles Exp $
 **/
 
 
@@ -77,7 +77,7 @@ public:
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdTileDim.h,v 1.9 2008/01/23 23:42:18 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdTileDim.h,v 1.9.294.1 2009/06/08 17:14:03 echarles Exp $
 **/
 
 class AcdTileDim {
@@ -117,6 +117,26 @@ public:
   float gapAtLocalY(int side, double localY) const;
     
   float gapSize(const HepPoint3D& localPoint, int iVol) const;
+
+  inline const HepPoint3D& tileCenter(unsigned int iVol) const {
+    assert(iVol < m_sections.size());
+    return m_sections[iVol]->m_center;
+  }
+
+  inline const HepTransform3D& transform(unsigned int iVol) const {
+    assert(iVol < m_sections.size());
+    return m_sections[iVol]->m_trans;
+  }
+
+  inline const HepPoint3D* corner(unsigned int iVol) const {
+    assert(iVol < m_sections.size());
+    return m_sections[iVol]->m_corners;
+  }
+
+  inline void toLocal(const HepPoint3D& global, HepPoint3D& localPoint, unsigned int iVol) const {
+    assert(iVol < m_sections.size());
+    localPoint = m_sections[iVol]->m_trans * global;
+  }
 
   
 protected:
