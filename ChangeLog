@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Fri Aug  7 18:08:04 PDT 2009
+GlastRelease-scons/AcdUtil
+
+Modified Files:
+	.cvsignore AcdUtilLib.py SConscript 
+Log Message:
+SConscript:  use registerTargets
+AcdUtilLib.py:  add all the libraries showing up in ldd of shareable
+.cvsignore:   add SCons build products
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r0p0gr7, operation: add
 Package: AcdUtil
