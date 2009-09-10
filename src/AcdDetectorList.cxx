@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdDetectorList.cxx,v 1.3 2007/06/11 16:13:59 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdDetectorList.cxx,v 1.4 2007/07/26 14:06:03 heather Exp $
 // Description:
 
 #include "AcdUtil/AcdDetectorList.h"
@@ -8,10 +8,10 @@
 namespace AcdUtil {
 
 IGeometry::VisitorRet 
-AcdDetectorList::pushShape(ShapeType s, const UintVector& idvec, 
-                       std::string name, std::string material, 
-                       const DoubleVector& params, 
-                       VolumeType type, SenseType sense)
+AcdDetectorList::pushShape(ShapeType /*s*/, const UintVector& idvec, 
+                       std::string name, std::string /*material*/, 
+                       const DoubleVector& /*params*/, 
+                       VolumeType /*type*/, SenseType /*sense*/)
 {
     // concatenate the id for this node to current id.
     m_idcount.push_back(idvec.size());
