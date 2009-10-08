@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Thu Oct  8 11:50:20 PDT 2009
+AcdUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add new AcdFailureModeSvc
+    *
+------------------------------------------------------------
+User: heather  Thu Oct  8 11:50:20 PDT 2009
 AcdUtil/AcdUtil
 
 Added Files:
