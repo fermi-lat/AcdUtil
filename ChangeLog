@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Oct  8 11:50:19 PDT 2009
+AcdUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+add new AcdFailureModeSvc
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-02-08-10, operation: add
 Package: AcdUtil
