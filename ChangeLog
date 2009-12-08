@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Dec  7 22:34:52 PST 2009
+GlastRelease-scons/AcdUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+Include Failure mode svc in SCons build
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-03-00-00, operation: add
 Package: AcdUtil
