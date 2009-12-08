@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/SConscript,v 1.17 2009/09/10 16:56:43 heather Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdUtil/SConscript,v 1.18 2009/10/08 18:50:19 heather Exp $
 # Authors: Heather Kelly <heather@slac.stanford.edu>, Eric Charles <echarles@slac.stanford.edu>
 # Version: AcdUtil-03-00-00
 Import('baseEnv')
@@ -20,7 +20,8 @@ AcdUtil = libEnv.SharedLibrary('AcdUtil',
                                 'src/AcdDetectorList.cxx',
                                 'src/AcdCalib.cxx', 'src/AcdCalibMgr.cxx',
                                 'src/AcdCalibSvcBase.cxx','src/AcdCalibSvc.cxx',
-                                'src/AcdSimCalibSvc.cxx','src/IAcdCalibSvc.cxx']
+                                'src/AcdSimCalibSvc.cxx', 'src/IAcdCalibSvc.cxx',
+                                'src/AcdFailureModeSvc.cxx']
                                + listFiles(['src/Dll/*.cxx']) + [testAcdUtilObj])
 
 progEnv.Tool('AcdUtilLib')
