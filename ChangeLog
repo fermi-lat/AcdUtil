@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Dec 15 07:10:59 PST 2009
+AcdUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+merging in Eric's updates for AcdRecon for Pass 8
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-03-00-01, operation: add
 Package: AcdUtil
