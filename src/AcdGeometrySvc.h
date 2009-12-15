@@ -12,7 +12,7 @@
  * 
  * @author Heather Kelly 
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.16 2008/01/23 23:42:18 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdGeometrySvc.h,v 1.17.196.2 2009/06/10 00:11:42 echarles Exp $
  */
 
 #include "GaudiKernel/Service.h"
@@ -80,12 +80,8 @@ public:
 
     /// Given an AcdId, provide three vectors of Rays.  Each vector pertains to one set of ribbon segments
     bool fillRibbonData(const idents::AcdId& id,
-			std::vector<Ray>& minusSideRays,
-			std::vector<Ray>& topRays,
-			std::vector<Ray>& plusSideRays, 
-			HepTransform3D& minusSideTransform,
-			HepTransform3D& topTransform,
-			HepTransform3D& plusTransform);
+			std::vector<AcdRibbonSegment*>& segs,
+			int& topIdx, int& plusIdx);
     
     /// Return half ribbon width
     virtual double ribbonHalfWidth() const;
@@ -110,6 +106,10 @@ public:
     AcdFrameUtil::AcdReferenceFrame getReferenceFrame(const idents::VolumeIdentifier &volId) const;
 
     StatusCode findCornerGaps();
+
+    virtual StatusCode getNextTileCorners(const idents::AcdId& id, int dir, 
+					  HepPoint3D& c1, HepPoint3D& c2, bool& isRealGap);
+
 
 protected:
 
