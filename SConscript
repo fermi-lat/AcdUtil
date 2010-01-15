@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/SConscript,v 1.20 2009/12/08 06:42:42 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdUtil/SConscript,v 1.21 2009/12/15 15:10:59 heather Exp $
 # Authors: Heather Kelly <heather@slac.stanford.edu>, Eric Charles <echarles@slac.stanford.edu>
 # Version: AcdUtil-03-01-01
 Import('baseEnv')
@@ -25,6 +25,7 @@ AcdUtil = libEnv.SharedLibrary('AcdUtil',
                                + listFiles(['src/Dll/*.cxx']) + [testAcdUtilObj])
 
 progEnv.Tool('AcdUtilLib')
+progEnv.AppendUnique(CPPDEFINES = ['PACKAGE_NAME=\\"Acdutil\\"'])
 test_AcdUtil = progEnv.GaudiProgram('test_AcdUtil',[testAcdUtilObj], test = 1)
 
 progEnv.Tool('registerTargets', package = 'AcdUtil',
