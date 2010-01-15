@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 14 16:58:10 PST 2010
+GlastRelease-scons/AcdUtil/src
+
+Added Files:
+	AcdCalib_override_mc.txt AcdCalib_recon_data.txt 
+	AcdCalib_recon_mc.txt AcdCalib_sim.txt 
+Log Message:
+Move job options fragments here rather than under AcdUtil/AcdUtil
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan 14 16:34:34 PST 2010
 GlastRelease-scons/AcdUtil/AcdUtil
 
