@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 14 16:34:13 PST 2010
+GlastRelease-scons/AcdUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+Add compile-time macro definition for PACKAGE_NAME (will be needed to find
+job options for test program)
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-03-01-01, operation: add
 Package: AcdUtil
