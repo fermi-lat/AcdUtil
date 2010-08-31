@@ -2,7 +2,7 @@
 // for the ACD.
 // 
 //
-// $Header: /nfs/slac/g/glast/ground/cvs/CalXtalResponse/src/CalFailureMode/CalFailureModeSvc.cxx,v 1.3 2008/01/22 20:14:48 fewtrell Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdFailureModeSvc.cxx,v 1.1 2009/10/08 18:50:20 heather Exp $
 //
 /** @file     
 @author H.Kelly
@@ -18,8 +18,9 @@
 
 // declare the service factories for the AcdFailureModeSvc
 
-static SvcFactory<AcdFailureModeSvc> a_factory;
-const ISvcFactory& AcdFailureModeSvcFactory = a_factory; 
+//static SvcFactory<AcdFailureModeSvc> a_factory;
+//const ISvcFactory& AcdFailureModeSvcFactory = a_factory; 
+DECLARE_SERVICE_FACTORY(AcdFailureModeSvc);
 
 AcdFailureModeSvc::AcdFailureModeSvc(const std::string& name,ISvcLocator* svc) : Service(name,svc)
 {
