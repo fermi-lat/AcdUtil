@@ -1,8 +1,8 @@
 package AcdUtil
-version v3r1p2
+version v3r1p2gr01
 author Heather Kelly <heather@slac.stanford.edu>
 author Eric Charles <echarles@slac.stanford.edu>
-# $Id: requirements,v 1.81 2009/12/15 15:10:59 heather Exp $
+# $Id: requirements,v 1.82 2010/01/15 01:19:02 jrb Exp $
 
 use GlastSvc v*
 use Event v*
@@ -26,6 +26,7 @@ apply_pattern library_Llinkopts library=AcdUtilCommon
 #=============================================================
 private
 
+use RootmapPolicy * GlastPolicy
 use gr_app v*
 
 #apply_pattern use_CalibData_symbols
@@ -40,9 +41,10 @@ library AcdUtil AcdGeometrySvc.cxx AcdDetectorList.cxx \
                 AcdCalibSvc.cxx  AcdSimCalibSvc.cxx \
                 AcdFailureModeSvc.cxx \
 	        IAcdCalibSvc.cxx \
-                Dll/*.cxx \
                 test/*.cxx \
                 ${AcdUtil_headers}               
+
+apply_pattern generate_rootmap library=AcdUtil
 
 apply_pattern package_Cshlibflags
 
