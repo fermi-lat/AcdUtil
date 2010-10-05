@@ -2,7 +2,7 @@ package AcdUtil
 version v3r1p2gr01
 author Heather Kelly <heather@slac.stanford.edu>
 author Eric Charles <echarles@slac.stanford.edu>
-# $Id: requirements,v 1.82 2010/01/15 01:19:02 jrb Exp $
+# $Id: requirements,v 1.82.14.1 2010/08/31 12:39:38 heather Exp $
 
 use GlastSvc v*
 use Event v*
@@ -33,6 +33,7 @@ use gr_app v*
 
 library AcdUtilCommon -no_share AcdTileDim.cxx AcdRibbonDim.cxx AcdTileFuncs.cxx AcdFrameUtil.cxx AcdCalibFuncs.cxx RayDoca.cxx
 
+set AcdUtilCommon_skip_rootmap "1"
 
 apply_pattern package_headers
 
