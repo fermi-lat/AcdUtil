@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Oct  4 20:10:11 PDT 2010
+AcdUtil/cmt
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	requirements 
+Log Message:
+minor update for Win rootmap
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-03-01-02-gr01, operation: add
 Package: AcdUtil
