@@ -1,7 +1,7 @@
 #define TestAcdUtil_CXX
 
 // File and Version Information
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.10 2009/10/08 18:50:20 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.11.16.1 2010/08/31 12:39:39 heather Exp $
 // Description:
 // Test for AcdUtil class. 
 
@@ -32,7 +32,7 @@
  *
  * Exercise all of AcdUtil to be sure that the methods function properly.
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.10 2009/10/08 18:50:20 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/test/TestAcdUtil.cxx,v 1.11.16.1 2010/08/31 12:39:39 heather Exp $
  */
 
 class TestAcdUtil : public Algorithm {
@@ -59,8 +59,9 @@ private:
                         unsigned seg);
 };
 
-static const AlgFactory<TestAcdUtil>  Factory;
-const IAlgFactory& TestAcdUtilFactory = Factory;
+//static const AlgFactory<TestAcdUtil>  Factory;
+//const IAlgFactory& TestAcdUtilFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(TestAcdUtil);
 
 TestAcdUtil::TestAcdUtil(const std::string& name, ISvcLocator* pSvcLocator) :
 Algorithm(name, pSvcLocator), m_log(0) {
