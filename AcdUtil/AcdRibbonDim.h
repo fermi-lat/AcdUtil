@@ -13,8 +13,11 @@
 #include "CLHEP/Geometry/Transform3D.h"
 #include "geometry/Ray.h"
 
+typedef HepGeom::Point3D<double> HepPoint3D;
+typedef HepGeom::Vector3D<double> HepVector3D;
+typedef HepGeom::Transform3D HepTransform3D;
 
-// A ribbon segment
+// ribbon segment
 
 class AcdRibbonSegment {
 public:
@@ -45,7 +48,7 @@ public:
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdRibbonDim.h,v 1.9.294.3 2009/06/12 16:51:33 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/AcdRibbonDim.h,v 1.10 2009/12/15 15:10:59 heather Exp $
 */
 
 class AcdRibbonDim {

@@ -1,7 +1,7 @@
 /** @file IAcdGeometrySvc.h
  @brief Abstract interface to AcdGeometrySvc (q.v.)
 
-  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdGeometrySvc.h,v 1.15.294.2 2009/06/10 23:45:11 echarles Exp $
+  $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/AcdUtil/IAcdGeometrySvc.h,v 1.16 2009/12/15 15:10:59 heather Exp $
 */
 
 #ifndef __IACDGEOMETRYSVC_H
@@ -95,7 +95,7 @@ public:
 
     /// Given an AcdId, provide the tile size, center and corners
     virtual bool fillTileData(const idents::AcdId& id, int iVol,
-			      HepTransform3D& transform,
+			      HepGeom::Transform3D& transform,
 			      std::vector<double>& dim, 
 			      HepPoint3D& center,
 			      HepPoint3D* corner) = 0;
