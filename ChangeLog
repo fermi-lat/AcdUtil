@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri May 20 07:57:43 PDT 2011
+AcdUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+CLHEP 2.1.0.1
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-03-01-04, operation: add
 Package: AcdUtil
