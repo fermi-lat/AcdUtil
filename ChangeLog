@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Mon Aug  1 12:11:13 PDT 2011
+AcdUtil/cmt
+
+Modified Files:
+      Tag: GlastReleasev17r35p23
+	requirements 
+Log Message:
+merge in SCons updates for P7
+    *
+------------------------------------------------------------
+User: heather  Mon Aug  1 12:11:13 PDT 2011
 AcdUtil
 
 Modified Files:
