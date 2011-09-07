@@ -2,6 +2,19 @@
 TAG
 Tag name: GlastRelease-17-35-24-gr04, operation: add
 Package: AcdUtil
+User: heather  Wed Sep  7 14:50:08 2011
+Files:
+  AcdUtil/src/Dll/AcdUtil_load.cxx  1.3
+  AcdUtil/src/Dll/AcdUtil_dll.cxx  1.2
+  AcdUtil/src/test/jobOptions.txtSAVE  1.2
+  AcdUtil/src/test/jobOptions.txt  1.4
+  AcdUtil/src/test/TestAcdUtil.cxx  1.9
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-gr04, operation: add
+Package: AcdUtil
 User: heather  Wed Sep  7 14:49:48 2011
 Files:
   AcdUtil/src/RayDoca.cxx  1.2
