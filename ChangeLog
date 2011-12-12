@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Dec 12 12:18:19 PST 2011
+GlastRelease-scons/AcdUtil/src
+
+Modified Files:
+	AcdCalibSvc.cxx AcdFailureModeSvc.cxx AcdGeometrySvc.cxx 
+	AcdSimCalibSvc.cxx 
+Log Message:
+new Gaudi v21r7
+    *
+------------------------------------------------------------
 User: heather  Mon Dec 12 12:18:18 PST 2011
 GlastRelease-scons/AcdUtil/doc
 
