@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Dec 12 12:18:18 PST 2011
+GlastRelease-scons/AcdUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+new Gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Mon Dec 12 12:18:18 PST 2011
 GlastRelease-scons/AcdUtil/cmt
 
 Modified Files:
