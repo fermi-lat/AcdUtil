@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Mon Dec 12 12:18:19 PST 2011
+GlastRelease-scons/AcdUtil/src/test
+
+Modified Files:
+	TestAcdUtil.cxx jobOptions.txt 
+Log Message:
+new Gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Mon Dec 12 12:18:19 PST 2011
 GlastRelease-scons/AcdUtil/src
 
 Modified Files:
