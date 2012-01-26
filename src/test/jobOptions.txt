@@ -5,9 +5,10 @@ ApplicationMgr.DLLs   = { "GlastSvc", "AcdUtil" };
 
 // List of required services
 ApplicationMgr.ExtSvc = { "GlastDetSvc",  
-//                          "GlastEventSelector/EventSelector" , 
+                          "DbEvtSelector/EventSelector" , 
 			  "EventCnvSvc" };
 
+ApplicationMgr.HistorgramPersistency="NONE";
 
 ApplicationMgr.TopAlg = { "TestAcdUtil" };
 
@@ -18,7 +19,7 @@ TestAcdUtil.OutputLevel = 2;
 //=========================================================================
 // Persistency service setup:
 EventPersistencySvc.CnvServices = {"EventCnvSvc"};
-EventSelector.Input = "NONE";
+//EventSelector.Input = "NONE";
 
 GlastDetSvc.xmlfile="$(XMLGEODBSXMLPATH)/flight/flightSegVols.xml";
 GlastDetSvc.topVolume="LAT";
