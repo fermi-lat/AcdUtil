@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/SConscript,v 1.28 2011/12/12 20:18:18 heather Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/SConscript,v 1.15.162.1.2.1 2012/01/26 18:33:45 heather Exp $
 # Authors: Heather Kelly <heather@slac.stanford.edu>, Eric Charles <echarles@slac.stanford.edu>
-# Version: AcdUtil-03-02-00
+# Version: AcdUtil-02-08-09-gr02
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
