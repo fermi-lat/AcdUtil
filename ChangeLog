@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Thu Jan 26 10:34:19 PST 2012
+AcdUtil
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	SConscript 
+Log Message:
+update tag
+    *
+------------------------------------------------------------
 TAG
 Tag name: AcdUtil-02-08-09-gr02, operation: add
 Package: AcdUtil
