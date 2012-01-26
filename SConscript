@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/SConscript,v 1.27 2011/05/20 14:57:43 heather Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/SConscript,v 1.28 2011/12/12 20:18:18 heather Exp $
 # Authors: Heather Kelly <heather@slac.stanford.edu>, Eric Charles <echarles@slac.stanford.edu>
-# Version: AcdUtil-02-08-09-gr01
+# Version: AcdUtil-03-02-00
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
@@ -16,14 +16,12 @@ AcdUtilCommon = libEnv.StaticLibrary('AcdUtilCommon',
                                       'src/AcdCalibFuncs.cxx', 'src/RayDoca.cxx'])
 
 cmpLibEnv.Tool('addLinkDeps', package='AcdUtil', toBuild='component')
-AcdUtil = cmpLibEnv.SharedLibrary('AcdUtil',
-                               ['src/AcdGeometrySvc.cxx',
-                                'src/AcdDetectorList.cxx',
-                                'src/AcdCalib.cxx', 'src/AcdCalibMgr.cxx',
-                                'src/AcdCalibSvcBase.cxx','src/AcdCalibSvc.cxx',
-                                'src/AcdSimCalibSvc.cxx', 'src/IAcdCalibSvc.cxx'
-                                ]
-                               + listFiles(['src/Dll/*.cxx']) + [testAcdUtilObj])
+AcdUtil = cmpLibEnv.ComponentLibrary('AcdUtil',
+                                     ['src/AcdGeometrySvc.cxx',
+                                      'src/AcdDetectorList.cxx',
+                                      'src/AcdCalib.cxx', 'src/AcdCalibMgr.cxx',
+                                      'src/AcdCalibSvcBase.cxx','src/AcdCalibSvc.cxx',
+                                      'src/AcdSimCalibSvc.cxx', 'src/IAcdCalibSvc.cxx'] + [testAcdUtilObj])
 
 progEnv.Tool('AcdUtilLib')
 test_AcdUtil = progEnv.GaudiProgram('test_AcdUtil',[testAcdUtilObj], test = 1,
