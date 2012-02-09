@@ -5,10 +5,10 @@ ApplicationMgr.DLLs   = { "GlastSvc", "AcdUtil" };
 
 // List of required services
 ApplicationMgr.ExtSvc = { "GlastDetSvc",  
-                          "DbEvtSelector/EventSelector" , 
-			  "EventCnvSvc" };
+                          "DbEvtSelector/EventSelector"};
+//			  "EventCnvSvc" };
 
-ApplicationMgr.HistorgramPersistency="NONE";
+ApplicationMgr.HistogramPersistency="NONE";
 
 ApplicationMgr.TopAlg = { "TestAcdUtil" };
 
