@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Feb  9 12:58:10 PST 2012
+AcdUtil/src/test
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	jobOptions.txt 
+Log Message:
+fix typo; eliminate unnecessary ref. to EventCnvSvc
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-19-04-01-gr08, operation: add
 Package: AcdUtil
