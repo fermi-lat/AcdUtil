@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdUtil/SConscript,v 1.25.2.2 2010/10/20 18:08:55 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdUtil/SConscript,v 1.28 2011/12/12 20:18:18 heather Exp $
 # Authors: Heather Kelly <heather@slac.stanford.edu>, Eric Charles <echarles@slac.stanford.edu>
 # Version: AcdUtil-03-02-00
 Import('baseEnv')
@@ -9,6 +9,7 @@ progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 cmpLibEnv = baseEnv.Clone()
 
+libEnv.Tool('addLinkDeps', package = 'AcdUtil', toBuild='static')
 testAcdUtilObj = libEnv.SharedObject('src/test/TestAcdUtil.cxx')
 AcdUtilCommon = libEnv.StaticLibrary('AcdUtilCommon',
                                      ['src/AcdTileDim.cxx', 'src/AcdRibbonDim.cxx',
