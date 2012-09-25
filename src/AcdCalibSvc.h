@@ -1,6 +1,6 @@
 #ifndef AcdCalibSvc_H
 #define AcdCalibSvc_H
-// $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/src/AcdCalibSvc.h,v 1.4 2007/10/09 18:37:21 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/AcdUtil/src/AcdCalibSvc.h,v 1.5 2008/01/23 23:42:18 echarles Exp $
 
 // LOCAL 
 #include "AcdCalibMgr.h"
@@ -67,7 +67,9 @@ public:
   }
   
   virtual StatusCode retrieveObject(const std::string& path, DataObject*& pObject) {
-    return m_dataProviderSvc->retrieveObject(path, pObject);
+    StatusCode sc = m_dataProviderSvc->retrieveObject(path, pObject);
+	if (pObject) sc = m_dataProviderSvc->updateObject(pObject);
+	return sc;
   }
 
   const std::string getCalibPath(const ICalibPathSvc::CalibItem item, const std::string& flavor="") const;
