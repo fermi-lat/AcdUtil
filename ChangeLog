@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu Feb  6 15:29:17 PST 2014
+AcdUtil/AcdUtil
+
+Added Files:
+	AcdUtilFuncs.h 
+Log Message:
+Added AcdUtilFuncs to pull in a couple of things needed for Remeriting
+    *
+------------------------------------------------------------
 User: heather  Mon Jan  7 12:19:17 PST 2013
 AcdUtil/cmt
 
