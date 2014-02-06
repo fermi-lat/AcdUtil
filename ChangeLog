@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu Feb  6 15:29:18 PST 2014
+AcdUtil/src
+
+Added Files:
+	AcdUtilFuncs.cxx 
+Log Message:
+Added AcdUtilFuncs to pull in a couple of things needed for Remeriting
+    *
+------------------------------------------------------------
 User: echarles  Thu Feb  6 15:29:17 PST 2014
 AcdUtil/AcdUtil
 
