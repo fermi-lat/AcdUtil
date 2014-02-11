@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/SConscript,v 1.30 2012/08/20 18:07:07 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/AcdUtil/SConscript,v 1.31 2012/09/25 22:46:05 usher Exp $
 # Authors: Heather Kelly <heather@slac.stanford.edu>, Eric Charles <echarles@slac.stanford.edu>
 # Version: AcdUtil-03-04-00
 Import('baseEnv')
@@ -14,7 +14,8 @@ testAcdUtilObj = libEnv.SharedObject('src/test/TestAcdUtil.cxx')
 AcdUtilCommon = libEnv.StaticLibrary('AcdUtilCommon',
                                      ['src/AcdTileDim.cxx', 'src/AcdRibbonDim.cxx',
                                       'src/AcdTileFuncs.cxx', 'src/AcdFrameUtil.cxx',
-                                      'src/AcdCalibFuncs.cxx', 'src/RayDoca.cxx'])
+                                      'src/AcdCalibFuncs.cxx', 'src/AcdUtilFuncs.cxx',
+                                      'src/RayDoca.cxx'])
 
 cmpLibEnv.Tool('addLinkDeps', package='AcdUtil', toBuild='component')
 AcdUtil = cmpLibEnv.ComponentLibrary('AcdUtil',
