@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Feb 10 18:30:58 PST 2014
+AcdUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+Fixed Sconscript and AcdUtilFuncs.cxx
+    *
+------------------------------------------------------------
 User: echarles  Thu Feb  6 15:29:18 PST 2014
 AcdUtil/src
 
